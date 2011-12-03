@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary xmlns="http://incubator.apache.org/uima"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="dictionary.xsd">
+ <typeCollection>
+  <dictionaryMetaData caseNormalization="true"
+   multiWordEntries="true" />
+  <typeDescription>
+   <typeName>org.apache.uima.CompanyDictionaryAnnotation</typeName>
+  </typeDescription>
+  <entries>
+   <entry>
+    <key>Sourcesense</key>
+   </entry>
+   <entry>
+    <key>Sincro Consulting spa</key>
+   </entry>
+   <entry>
+    <key>Microsoft</key>
+   </entry>
+   <entry>
+    <key>Alzheimer?s Association</key>
+   </entry>
+   <entry>
+    <key>Association</key>
+   </entry>
+   <entry>
+    <key>Medical and Scientific Advisory Council</key>
+   </entry>
+   <entry>
+    <key>Regione Autonoma Friuli Venezia Giulia</key>
+   </entry>
+   <entry>
+    <key>MSI</key>
+   </entry>
+   <entry>
+    <key>Adobe</key>
+   </entry>
+   <entry>
+    <key>Metabolic Syndrome Institute</key>
+   </entry>
+   <entry>
+    <key>Scientific Committee</key>
+   </entry>
+   <entry>
+    <key>Metabolic Syndrome Institute Scientific Committee</key>
+   </entry>
+   <entry>
+    <key>Commission</key>
+   </entry>
+   <entry>
+    <key>European Union</key>
+   </entry>
+   <entry>
+    <key>CV'</key>
+   </entry>
+   <entry>
+    <key>Court of First Instance of the European Communities</key>
+   </entry>
+   <entry>
+    <key>EU</key>
+   </entry>
+   <entry>
+    <key>CFI</key>
+   </entry>
+   <entry>
+    <key>European Commission</key>
+   </entry>
+  </entries>
+ </typeCollection>
+</dictionary>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="ProclamationTextAnnotatorDescriptor">
+      <import name="ProclamationTextAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TextKeywordExtractionAEDescriptor">
+      <import name="TextKeywordExtractionAEDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="FundingPercentageAnnotatorDescriptor">
+      <import name="FundingPercentageAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="CompanyAggregateAEDescriptor">
+      <import name="CompanyAggregateAEDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="ActivityAnnotatorDescriptor">
+      <import name="ActivityAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="OpenCalaisAnnotator">
+      <import name="OpenCalaisAnnotator"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="AbstractAnnotatorDescriptor">
+      <import name="AbstractAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TextCategorizationAEDescriptor">
+      <import name="TextCategorizationAEDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TagAnnotatorDescriptor">
+      <import name="TagAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="BeneficiaryAnnotatorDescriptor">
+      <import name="BeneficiaryAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="ExpirationDateAnnotatorDescriptor">
+      <import name="ExpirationDateAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TextRankedEntityExtractionAEDescriptor">
+      <import name="TextRankedEntityExtractionAEDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TitleAnnotatorDescriptor">
+      <import name="TitleAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="NoteAnnotatorDescriptor">
+      <import name="NoteAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="WhitespaceTokenizer">
+      <import name="WhitespaceTokenizer"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="BudgetAnnotatorDescriptor">
+      <import name="BudgetAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="GeographicRegionAnnotatorDescriptor">
+      <import name="GeographicRegionAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="SimpleLanguageAnnotatorDescriptor">
+      <import name="SimpleLanguageAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="SectorAnnotatorDescriptor">
+      <import name="SectorAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="FundingTypeAnnotatorDescriptor">
+      <import name="FundingTypeAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="LeafLinkAnnotatorDescriptor">
+      <import name="LeafLinkAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="HmmTagger">
+      <import name="HmmTagger"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="SubjectAnnotatorDescriptor">
+      <import name="SubjectAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <analysisEngineMetaData>
+    <name>AggregateCybionAEDescriptor</name>
+    <description/>
+    <version>0.1</version>
+    <vendor/>
+    <configurationParameters/>
+    <configurationParameterSettings/>
+    <flowConstraints>
+      <fixedFlow>
+        <node>TextCategorizationAEDescriptor</node>
+        <node>TextRankedEntityExtractionAEDescriptor</node>
+        <node>TextKeywordExtractionAEDescriptor</node>
+        <node>OpenCalaisAnnotator</node>
+        <node>WhitespaceTokenizer</node>
+        <node>HmmTagger</node>
+        <node>ProclamationTextAnnotatorDescriptor</node>
+        <node>SimpleLanguageAnnotatorDescriptor</node>
+        <node>CompanyAggregateAEDescriptor</node>
+        <node>ActivityAnnotatorDescriptor</node>
+        <node>BeneficiaryAnnotatorDescriptor</node>
+        <node>BudgetAnnotatorDescriptor</node>
+        <node>ExpirationDateAnnotatorDescriptor</node>
+        <node>FundingPercentageAnnotatorDescriptor</node>
+        <node>FundingTypeAnnotatorDescriptor</node>
+        <node>GeographicRegionAnnotatorDescriptor</node>
+        <node>LeafLinkAnnotatorDescriptor</node>
+        <node>NoteAnnotatorDescriptor</node>
+        <node>SectorAnnotatorDescriptor</node>
+        <node>SubjectAnnotatorDescriptor</node>
+        <node>TitleAnnotatorDescriptor</node>
+        <node>TagAnnotatorDescriptor</node>
+        <node>AbstractAnnotatorDescriptor</node>
+      </fixedFlow>
+    </flowConstraints>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported>
+          <language>it-it</language>
+          <language>en-en</language>
+        </languagesSupported>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

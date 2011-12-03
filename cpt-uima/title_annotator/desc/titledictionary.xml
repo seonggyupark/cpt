@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary xmlns="http://incubator.apache.org/uima" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="dictionary.xsd">
+  <typeCollection>
+    <dictionaryMetaData caseNormalization="true" multiWordEntries="true"/>
+    <typeDescription>
+      <typeName>org.apache.uima.TitleDictionaryAnnotation</typeName>
+    </typeDescription>
+    <entries>
+      <entry>
+        <key>Title</key>
+      </entry>
+      <entry>
+        <key>Titolo</key>
+      </entry>
+      <entry>
+        <key>titolo</key>
+      </entry>
+      <entry>
+        <key>title</key>
+      </entry>
+    </entries>
+  </typeCollection>
+</dictionary>

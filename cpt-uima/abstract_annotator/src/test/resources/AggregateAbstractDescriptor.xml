@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="AbstractAnnotatorDescriptor">
+      <import name="AbstractAnnotatorDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TextLanguageDetectionAEDescriptor">
+      <import location="TextLanguageDetectionAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TextRankedEntityExtractionAEDescriptor">
+      <import location="TextRankedEntityExtractionAEDescriptor.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="SimpleLanguageAnnotatorAggregateDescriptor">
+      <import name="SimpleLanguageAnnotatorAggregateDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="WhitespaceTokenizer">
+      <import name="WhitespaceTokenizer"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="OpenCalaisAnnotator">
+      <import location="OpenCalaisAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="HmmTagger">
+      <import name="HmmTagger"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <analysisEngineMetaData>
+    <name>AggregateAbstractDescriptor</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <configurationParameters/>
+    <configurationParameterSettings/>
+    <flowConstraints>
+      <fixedFlow>
+        <node>WhitespaceTokenizer</node>
+        <node>HmmTagger</node>
+        <node>TextLanguageDetectionAEDescriptor</node>
+        <node>TextRankedEntityExtractionAEDescriptor</node>
+        <node>OpenCalaisAnnotator</node>
+        <node>SimpleLanguageAnnotatorAggregateDescriptor</node>
+        <node>AbstractAnnotatorDescriptor</node>
+      </fixedFlow>
+    </flowConstraints>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

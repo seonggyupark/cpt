@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>annotator-superpom</artifactId>
+    <groupId>cybion</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cybion</groupId>
+  <artifactId>abstract_annotator</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>abstract_annotator</name>
+  <url></url>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>alchemy-annotator</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>cybion</groupId>
+      <artifactId>language-annotator</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>OpenCalaisAnnotator</artifactId>
+      <type>jar</type>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <resources>
+      <resource>
+        <directory>desc</directory>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <forkMode>pertest</forkMode>
+          <argLine>-Xms256m -Xmx512m</argLine>
+          <testFailureIgnore>false</testFailureIgnore>
+          <skip>false</skip>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.uima</groupId>
+        <artifactId>PearPackagingMavenPlugin</artifactId>
+        <version>2.3.1</version>
+        <!-- this comment is a flag for changeVersion -->
+        <extensions>true</extensions>
+        <executions>
+          <execution>
+            <id>buildPear</id>
+            <goals>
+              <goal>package</goal>
+            </goals>
+            <!-- needs to run after the jar is built
+       before the assembly is done -->
+            <phase>package</phase>
+            <configuration>
+              <datapath>$main_root/resources</datapath>
+              <componentId>${artifactId}</componentId>
+              <mainComponentDesc>desc/AggregateAbstractDescriptor.xml</mainComponentDesc>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <!-- copy the bin/artifactId/lib to the pearPackaging/lib -->
+          <execution>
+            <id>copy bin/artifactId/lib and LIC/NOT/DIS/RDME to target/pearPackaging</id>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <phase>compile</phase>
+            <!-- run after dependency plugin runs
+        before pear packager runs -->
+            <configuration>
+              <outputDirectory>${project.build.directory}/pearPackaging</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>${project.build.directory}/assembly-bin/${artifactId}</directory>
+                  <includes>
+                    <include>lib/**</include>
+                  </includes>
+                </resource>
+                <resource>
+                  <directory>.</directory>
+                  <includes>
+                    <include>readme*</include>
+                    <include>README*</include>
+                    <include>LICENSE*</include>
+                    <include>NOTICE*</include>
+                    <include>DISCLAIMER*</include>
+                  </includes>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+
+  </build>
+</project>

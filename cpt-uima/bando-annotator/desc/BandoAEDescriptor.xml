@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+<primitive>false</primitive>
+<delegateAnalysisEngineSpecifiers>
+<delegateAnalysisEngine key="WhitespaceTokenizer">
+<import location="WhitespaceTokenizer.xml"/>
+</delegateAnalysisEngine>
+<delegateAnalysisEngine key="OpenCalaisAnnotatorDescriptor">
+<import location="OpenCalaisAnnotatorDescriptor.xml"/>
+</delegateAnalysisEngine>
+<delegateAnalysisEngine key="HmmTagger">
+<import location="HmmTagger.xml"/>
+</delegateAnalysisEngine>
+</delegateAnalysisEngineSpecifiers>
+<analysisEngineMetaData>
+<name>BandoAEDescriptor</name>
+<description>First Annotator able to recognize tenders</description>
+<version>0.1-alpha</version>
+<vendor></vendor>
+<configurationParameters searchStrategy="language_fallback"/>
+<configurationParameterSettings/>
+<flowConstraints>
+<fixedFlow>
+<node>OpenCalaisAnnotatorDescriptor</node>
+<node>WhitespaceTokenizer</node>
+<node>HmmTagger</node>
+</fixedFlow>
+</flowConstraints>
+<fsIndexCollection/>
+<capabilities>
+<capability>
+<inputs/>
+<outputs/>
+<languagesSupported>
+<language>it</language>
+<language>en</language>
+</languagesSupported>
+</capability>
+</capabilities>
+<operationalProperties>
+<modifiesCas>true</modifiesCas>
+<multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+<outputsNewCASes>false</outputsNewCASes>
+</operationalProperties>
+</analysisEngineMetaData>
+<resourceManagerConfiguration/>
+</analysisEngineDescription>

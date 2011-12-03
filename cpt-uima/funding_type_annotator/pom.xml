@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>annotator-superpom</artifactId>
+    <groupId>cybion</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cybion</groupId>
+  <artifactId>funding_type_annotator</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>funding_type_annotator</name>
+  <description>annota il tipo di finanziamento</description>
+  <url>http://maven.apache.org</url>
+  <build>
+    <resources>
+      <resource>
+        <directory>desc</directory>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.uima</groupId>
+        <artifactId>PearPackagingMavenPlugin</artifactId>
+        <version>2.3.0-incubating</version>
+        <!-- this comment is a flag for changeVersion -->
+        <extensions>true</extensions>
+        <executions>
+          <execution>
+            <id>buildPear</id>
+            <goals>
+              <goal>package</goal>
+            </goals>
+            <!-- needs to run after the jar is built
+       before the assembly is done -->
+            <phase>package</phase>
+            <configuration>
+              <datapath>$main_root/resources</datapath>
+              <componentId>${artifactId}</componentId>
+              <mainComponentDesc>desc/FundingTypeAnnotatorDescriptor.xml</mainComponentDesc>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>WhitespaceTokenizer</artifactId>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>Tagger</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

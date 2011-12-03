@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>annotator-superpom</artifactId>
+        <groupId>cybion</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cybion</groupId>
+    <artifactId>language-annotator</artifactId>
+    <url>http://incubator.apache.org/uima</url>
+    <name>Apache UIMA Java Annotator - SimpleLanguageAnnotator</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>DictionaryAnnotator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>WhitespaceTokenizer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>alchemy-annotator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>uimaj-test-util</artifactId>
+            <version>2.3.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>uimaj-component-test-util</artifactId>
+            <version>2.3.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>uima-an-sla</finalName>
+        <resources>
+            <resource>
+                <directory>desc</directory>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.uima</groupId>
+                <artifactId>PearPackagingMavenPlugin</artifactId>
+                <version>2.3.1</version>
+                <!-- this comment is a flag for changeVersion -->
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>buildPear</id>
+                        <goals>
+                            <goal>package</goal>
+                        </goals>
+                        <!-- needs to run after the jar is built
+                   before the assembly is done -->
+                        <phase>package</phase>
+                        <configuration>
+                            <datapath>$main_root/resources</datapath>
+                            <componentId>${artifactId}</componentId>
+                            <mainComponentDesc>desc/SimpleLanguageAnnotatorAggregateDescriptor.xml</mainComponentDesc>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

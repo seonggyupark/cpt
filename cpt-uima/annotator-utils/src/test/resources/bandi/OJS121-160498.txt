@@ -1,0 +1,169 @@
+L-Luxembourg: framework contract for customised electrical and electronic services
+
+2008/S 121-160498
+
+Contract notice
+
+Services
+
+
+Section I: Contracting authority
+
+I.1) Name, addresses and contact point(s):
+
+European Commission, Directorate-General for Energy and Transport, Directorate I ? Nuclear Safeguards, attn: Ms A. Adams-Webel/Mr Boella, EURO 3484, Euroforum Complex ? Main entrance 1, rue Henry M. Schnadt, Cloche d'Or Business Park, L-2530 Luxembourg. Tel.  (352) 43 01-32034. Fax  (352) 43 01-36059. E-mail: TREN-I1-CFT@ec.europa.eu.
+
+Internet address(es):
+
+General address of the contracting authority: http://ec.europa.eu/dgs/energy_transport/tenders/index_en.htm.
+
+Further information can be obtained at:
+
+as in above-mentioned contact point(s).
+
+Specifications and additional documents (including documents for competitive dialogue and a dynamic purchasing system) can be obtained at:
+
+as in above-mentioned contact point(s).
+
+Tenders or requests to participate must be sent to:
+
+as in above-mentioned contact point(s).
+I.2) Type of the contracting authority and main activity or activities:
+European institution/agency or international organisation.
+The contracting authority is purchasing on behalf of other contracting authorities: no.
+
+
+Section II: Object of the contract
+
+II.1) Description
+II.1.1) Title attributed to the contract by the contracting authority:
+framework contract for customised electrical and electronic services.
+II.1.2) Type of contract and location of works, place of delivery or of performance:
+Services.
+Service category: No 27.
+Main place of performance: the contractor's premises.
+II.1.3) The notice involves:
+The establishment of a framework agreement.
+II.1.4) Information on framework agreement:
+Framework agreement with a single operator.
+Duration of the framework agreement: duration in months: 36.
+Estimated total value of purchases for the entire duration of the framework agreement:
+estimated value excluding VAT: EUR 150 000.
+II.1.5) Short description of the contract or purchase(s):
+To discharge of its responsibilities under Chapter VII of the Euratom Treaty, the European Commission maintains measurement systems in nuclear installations across the European Union. To design, produce, supply and repair components of these systems, electrical and electronical services are needed.
+This is a framework contract for electrical and electronic services, which will include counselling for and design, development, maintenance, services/repair of electrical and electronic equipment associated with these activities as well as the tooling and materials required for the task. Any action which would be carried out under this framework contract will be triggered by the Commission as defined in this specification by signed purchased order (Annex III of the draft contract), in which the technical specification and details will be defined.
+The tenderers will be required to carry out the following types of work:
+? development, design and counselling,
+? production and supply of electronic units,
+? service, maintenance and repair of electrical and electronic units,
+? materials and tooling used for services.
+II.1.6) Common procurement vocabulary (CPV):
+31600000, 31700000, 50000000.
+II.1.7) Contract covered by the Government Procurement Agreement (GPA):
+Yes.
+II.1.8) Division into lots:
+No.
+II.1.9) Variants will be accepted:
+No.
+II.2) Quantity or scope of the contract
+II.2.1) Total quantity or scope:
+The indicative maximum amount is EUR 150 000 (up to 3 years).
+II.2.2) Options:
+No.
+II.3) Duration of the contract or time limit for completion:
+Duration in months: 12 (from the award of the contract).
+
+
+Section III: Legal, economic, financial and technical information
+
+III.1) Conditions relating to the contract
+III.1.2) Main financing conditions and payment arrangements and/or reference to the relevant provisions regulating them:
+Payments shall be made in accordance with the provisions specified in the draft framework service contract. Payments shall be made within 30 days of the date of approval of the services by the Commission.
+III.1.3) Legal form to be taken by the group of economic operators to whom the contract is to be awarded:
+Groupings, irrespective of their legal form, may submit bids. Tenderers may, after forming a grouping, submit a joint bid on condition that it complies with the rules of competition. Such groupings (or consortium) must specify the company or person heading the project and must also submit a copy of the document authorising this company or person to submit a bid.
+If awarded, the contract will be signed by the company or the person heading the project, who will be, vis-à-vis the Commission, the only contracting party responsible for the performance of this contract.
+Tenders from a consortium of firm or groups of service providers, contractors or suppliers must specify the role, qualifications and experience of each member of the consortium or group. Each member must provide all the necessary documents for assessing the bid as a whole with regard to the exclusion criteria, selection criteria (all of them) and award criteria.
+III.1.4) Other particular conditions to which the performance of the contract is subject:
+No.
+III.2) Conditions for participation
+III.2.1) Personal situation of economic operators, including requirements relating to enrolment on professional or trade registers:
+Information and formalities necessary for evaluating if requirements are met:
+all tenderers must provide proof of registration, as prescribed in their country of establishment, on one of the professional or trade registers or provide a declaration or certificate.
+If the tenderer is a natural person, he/she must provide a copy of his/her identity card/passport or driving licence and proof that he/she is covered by a social security scheme as a self-employed person. Each tenderer (including subcontractor(s) or any member of a consortium or grouping) must complete and sign the identification forms in annex 1 and also provide the above-mentioned documents. However, the subcontractor(s) shall not be required to fill in or provide those documents when the services represent less than 20 % of the contract.
+III.2.2) Economic and financial capacity:
+Information and formalities necessary for evaluating if requirements are met:
+tenderers must provide proof of their financial and economic capacity by means of the following documents: the balance sheets or extracts from balance sheets for the last 3 financial years, and a statement of overall turnover and turnover relating to the relevant services for the last 3 financial years.
+This rule applies to all service providers, regardless of the percentage of tasks they intend to execute, once they have chosen to submit a tender. However, if the tender includes subcontractors whose tasks represent less than 20 % of the contract, those subcontractors are not obliged to provide evidence of their economic and financial capacity.
+III.2.3) Technical capacity:
+Information and formalities necessary for evaluating if requirements are met:
+tenderers should submit proof to show that:
+? they have experience in the area of engineering concerned as evidenced by a list of activities for the previous 2 years,
+? they employ an electronics engineer with more than 3 years professional experience,
+? they employ personnel with experience in signal processing and video technology,
+? they have sufficient staff to meet the delivery times laid out in Article I4.
+For all the points mentioned above supporting documentation will have to be provided.
+III.2.4) Reserved contracts:
+No.
+III.3) Conditions specific to services contracts
+III.3.1) Execution of the service is reserved to a particular profession:
+No.
+III.3.2) Legal entities should indicate the names and professional qualifications of the staff responsible for the execution of the service:
+No.
+
+
+Section IV: Procedure
+
+IV.1) Type of procedure
+IV.1.1) Type of procedure:
+Open.
+IV.2) Award criteria
+IV.2.1) Award criteria:
+The most economically advantageous tender in terms of the criteria stated in the specifications, in the invitation to tender or to negotiate or in the descriptive document.
+IV.2.2) An electronic auction will be used:
+No.
+IV.3) Administrative information
+IV.3.1) File reference number attributed by the contracting authority:
+TREN/I1/96-2008.
+IV.3.2) Previous publication(s) concerning the same contract:
+No.
+IV.3.3) Conditions for obtaining specifications and additional documents or descriptive document:
+Time limit for receipt of requests for documents or for accessing documents: 20.8.2008.
+Payable documents: no.
+IV.3.4) Time limit for receipt of tenders or requests to participate:
+27.8.2008.
+IV.3.6) Language(s) in which tenders or requests to participate may be drawn up:
+Bulgarian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish and Swedish.
+IV.3.7) Minimum time frame during which the tenderer must maintain the tender:
+Duration in month(s): 6 (from the date stated for receipt of tender).
+IV.3.8) Conditions for opening tenders:
+5.9.2008 (10:00).
+Place: EUFO II 2392.
+Persons authorised to be present at the opening of tenders: yes.
+1 representative per tenderer.
+
+
+Section VI: Complementary information
+
+VI.1) This is a recurrent procurement:
+No.
+VI.2) Contract related to a project and/or programme financed by EU funds:
+No.
+VI.3) Additional information:
+
+The tender specifications related to this call for tender can be downloaded on the web site of the Directorate-General for Energy and Transport at the following address: http://ec.europa.eu/dgs/energy_transport/tenders/index_en.htm.
+VI.4) Procedures for appeal
+VI.4.1) Body responsible for appeal procedures:
+
+Court of First Instance of the European Communities, rue du Fort Niedergrünewald, L-2925 Luxembourg. Tel. (352) 43 03-1. Fax (352) 43 03-2100. E-mail: CFI.registry@curia.europa.eu. URL: http://curia.europa.eu.
+
+Body responsible for mediation procedures:
+
+The European Ombudsman, 1, Avenue du Président Robert Schuman, B.P. 403, F-67001 Strasbourg Cedex. Tel. (33) 388 17 23 13. Fax (33) 388 17 90 62. E-mail: euro-ombudsman@europarl.europa.eu. URL: http://www.ombudsman.europa.eu/home/en/default.htm.
+VI.4.2) Lodging of appeals:
+Precise information on deadline(s) for lodging appeals:
+within 2 months of the notification to the plaintiff, or, in absence thereof, on the day on which it came to knowledge. A complaint to the European Ombudsman does not have an effect to either suspend this period or to open a new period for lodging appeals.
+VI.4.3) Service from which information about the lodging of appeals may be obtained:
+
+Court of First Instance of the European Communities, rue du Fort Niedergrünewald, L-2925 Luxembourg. Tel. (352) 43 03-1. Fax (352) 43 03-2100. E-mail: CFI.registry@curia.europa.eu. URL: http://curia.europa.eu.
+VI.5) Date of dispatch of this notice:
+13.6.2008. 

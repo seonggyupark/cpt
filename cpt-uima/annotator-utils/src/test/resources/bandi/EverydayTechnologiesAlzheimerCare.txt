@@ -1,0 +1,86 @@
+Everyday Technologies for Alzheimer Care (ETAC) is a cooperative research funding initiative sponsored by the Alzheimer?s Association and Intel Corporation. ETAC seeks proposals on personalized diagnostics, preventive tools and interventions for adults coping with the spectrum of cognitive aging and neurodegenerative disease, particularly Alzheimer?s disease.
+
+We are interested in new groundbreaking studies on emerging information and communication technologies (ICTs) as well as their clinical and social implications. Strongest consideration will be given to novel innovative ideas rather than more evolutionary incremental research. Originality of the study is more important than extensive evidence for why it is a logical next step in a research program.
+
+ETAC is designed to support exploratory multidisciplinary research that would not typically be funded by national health and science granting foundations. Minor iterations in testing plans or populations will not be considered for funding. Collaboration between social science/medical/public health and computer science/engineering researchers is valued. Mobile computing, high bandwidth sensing, robotics, imaging, face recognition, natural language processing, statistical modeling and a host of other technology advances allow unprecedented opportunities to study disease progression and therapeutic strategies in the context of everyday life.
+
+ETAC supports research that integrates such emerging technology capabilities with leading directions in behavioral science and biomedical research. Grants that merely create Internet-based versions of existing services or paper tools will not be considered. Submissions must be original ideas, not continuations of previously funded ETAC projects. Please see links provided below for examples of studies that have been funded by ETAC.
+
+The following list of research topics is not exhaustive; we invite researcher-initiated proposals in any of these or other topic areas.
+
+1. Behavioral assessment for early detection: What kinds of behavioral data can be captured through everyday devices for the early detection of Alzheimer?s? Are there key speech/conversational features that today?s or tomorrow?s cell phones could help to analyze for early detection? Are there gait and other movement patterns that home camera systems could capture to provide early warnings of potential cognitive conditions? How might different forms of dementia be differentiated by the analysis of such video and audio data?  How can data from sensors, imaging and traditional clinical measures be triangulated to enhance assessment?
+
+2. Prevention: How can technologies foster the cognitive resilience and reserve that may protect against dementia? How can innovative systems provide the cognitive, social and physical engagement (throughout the lifespan) that may prevent or delay Alzheimer?s disease and related disorders?  How can such systems motivate lifestyle changes and help people manage health conditions to limit vulnerability to dementia?
+
+3. Safety monitoring and support for caregivers: How can new technologies augment and improve upon existing safety monitoring systems? What acoustic and visual cues can be relied upon to help identify and triage patients? needs? For example, how can advances in high bandwidth sensing and statistical inferencing help detect and prevent falls?
+
+4. Supporting independent function in daily life: Early-stage products based on wireless sensor networks have been developed to support activities of daily living?how can additional processing capabilities improve upon these systems? What analytic tools could identify changes in individuals? typical patterns and provide customized assistance?
+
+5. Social support through face or audio recognition: How might speech, face and voice recognition technologies provide diagnosed individuals with real-time, just-in-time feedback, reminders and support for their social interactions? Can these technologies help someone with memory loss to keep track of past conversations, topics and social encounters in a way that does not require great effort or technological expertise?  How can mobile technologies (for example, phones, hearing aids, and watches) serve as social assistants?
+
+6. Detecting moments and patterns of lucidity: Given the sometimes weekly, daily or even hourly variability of function of many people with Alzheimer?s, how can we identify the optimal times for a patient to conduct complex household tasks like bill paying or self-medication? How can technologies help to find opportune moments for interacting with someone with Alzheimer?s?
+
+7. Privacy and security concerns of Alzheimer?s families: What privacy and security concerns do families and patients with Alzheimer?s have regarding home monitoring? How do these concerns differ according to generational, regional, cultural, gender and other differences? How can technology help people negotiate the sharing of health-related information?
+
+ETAC applicants are strongly encouraged to consider partnerships with chapters of the Alzheimer?s Association when it is advantageous to the goals of the project.
+
+Past Awarded ETAC Proposals:
+
+    * 2008 Awards
+    * 2007 Awards
+    * 2006 Awards
+    * 2005 Awards
+    * 2004 Awards 
+
+The Alzheimer's Association recognizes the need to increase the number of scientists from underrepresented groups in the research enterprise. Researchers from these groups are encouraged to apply.
+
+Background research from Intel Corporation
+The following paper from Intel Corporation presents preliminary findings of Intel?s Proactive Health research. The authors report on identified needs of cognitively impaired individuals and their caregivers that may be addressed through home computing technologies.
+
+ Ubiquitous Computing for Cognitive Decline: Findings from Intel?s Proactive Health Research
+
+Funding and award period: The Association anticipates funding 4 awards under this program.  Each total award is limited to $200,000 (direct and indirect costs) for up to three years.  Requests in any given year may not exceed $90,000 (direct and indirect costs). Indirect costs are capped at 10 percent (rent for laboratory/office space is expected to be covered by indirect costs paid to the institution).
+
+Eligibility: Researchers with full-time staff or faculty appointments are encouraged to apply. ETAC applications from post-doctoral candidates will not be accepted. 
+
+Ineligibility: The Alzheimer's Association will not accept new research grant applications from currently funded Alzheimer's disease investigators who are delinquent in submitting interim/final scientific or interim/final financial reports on active grants. This policy will be strictly adhered to with no exceptions.
+
+Deadlines and award dates: Letters of intent (LOIs) must be received by 5:00 p.m. EASTERN STANDARD TIME, December 1, 2008.  Letters of intent will not be accepted after this date. No exceptions will be made.
+
+Applications must be received by 5:00 p.m. EASTERN STANDARD TIME, January 8, 2009. Scientific and technical review will be conducted from February through May 2009.
+
+The second-level review by the ETAC Review Board and Medical and Scientific Advisory Council will be conducted during June 2009. Funding will be awarded by July 2009.
+
+Mechanism of award, reporting requirements and allowable costs: The mechanism of the award is the individual research grant.  The maximum allowable duration is three years. Annual progress and financial reports are required. Continuation of the grant over the awarded duration is contingent upon the timely receipt of scientific and financial reports. 
+
+Budget: A ?budget summary? for the proposed research project is required and must be submitted with the application and within the allowable page limits. However, if the application is to be awarded, a more detailed budget will be required and must be approved prior to the disbursement of funds. Your budget must not exceed the maximum amount of the award ($200,000 for ETAC).
+
+Allowable costs under this award: 
+
+    * It is required that most of the funds awarded under this program be used for direct research support. 
+
+Other allowable costs include:
+
+    * Small pieces of laboratory equipment and laboratory supplies
+    * Salary for the principal investigator, scientific (including postdoctoral fellows) and technical staff (including laboratory technicians and administrative support related directly to the funded project)
+    * Purchase and care of laboratory animals
+    * Purchase of a computer
+    * Support for travel to scientific and professional meetings, not to exceed $1,000 per year
+
+Costs not allowed under this award include:
+
+    * Tuition
+    * Rent for laboratory/office space
+    * Construction or renovation costs
+
+Multiple and overlapping submissions: If separate proposals are submitted to different grant competitions, each proposal submitted must be distinctly different.  Only one proposal will be funded if scores for multiple submissions fall within funding range of different grant categories.
+
+Applicants cannot submit two proposals in the ETAC grant competition ? even if the proposals are distinctly different.
+
+Active ETAC or Consortium Funding Recipients: Overlapping funding of more than one Alzheimer?s Association grant is not allowed. Investigators who have an active Alzheimer's Association or Intel grant may apply for another award that is clearly new work rather than an extension of their current grant. The new research proposal can be proposed in the last year of their grant if that last year concludes by the time the new funding year begins on July 1.
+
+Current holders of awards for support of research related to the project described in the ETAC LOI (whether these awards arise from federal or private sources, but especially if awards arise from other Alzheimer's Association or Intel program resources) are obliged to provide sufficient detail (e.g., budgetary detail, specific aims) so that it is clear that the LOI represents novel research. 
+
+An LOI for work that might be viewed as an extension of an existing line of (funded) research should clearly but briefly distinguish goals and progress for the current funding period from goals proposed in the LOI for the next period. The responsibility lies with the applicant to include rationale to dispel any notion of "double dipping" or "re-dipping.? As with most grantmaking programs, ETAC recognizes that scientific overlap may occur across funded grants; as is also usually the case, budgetary overlap is not permitted.  Coincidentally awarded grants must be negotiated in good faith according to this principle. ETAC program staff are available to assist PIs at the LOI stage to avoid the possibility of administrative disqualification at the full proposal review stage.
+
+For additional information, contact grantsapp@alz.org or call 312.335.5747 or 312.335.5889.

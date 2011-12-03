@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taeDescription xmlns="http://uima.watson.ibm.com/resourceSpecifier">
+	<frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+	<primitive>true</primitive>
+	<annotatorImplementationName>com.ibm.uima.jFrostAnnotator.jFrostAnnotator</annotatorImplementationName>
+	
+	<analysisEngineMetaData>
+		<name>LanguageWare Annotator</name>
+		<description>This annotator provides access to LanguageWare Language Identification.</description>
+		<version>6.1</version>
+		<vendor>IBM Corporation</vendor>
+		
+		<configurationParameters>
+<!-- (@Deprecated) 
+			<configurationParameter>
+				<name>SessionTypeIsLangID</name>
+				<description>
+					Determines the type of session. 
+					As this is a dedicated descriptor for Language Identification,
+					only a value of "true" is supported.
+				</description>
+				<type>Boolean</type>
+				<multiValued>false</multiValued>
+				<mandatory>false</mandatory>
+			</configurationParameter>     
+			
+			<configurationParameter>
+				<name>Verbose</name>
+				<description>If true more output is logged</description>
+				<type>Boolean</type>
+				<multiValued>false</multiValued>
+				<mandatory>false</mandatory>
+			</configurationParameter>
+-->
+			<configurationParameter>
+				<name>LWDataSubdir</name>
+				<description>The name of the directory under the UIMA data directory in which the LanguageWare resources are located</description>
+				<type>String</type>
+				<multiValued>false</multiValued>
+				<mandatory>false</mandatory>
+			</configurationParameter>
+			<configurationParameter>
+				<name>LangIDDictName</name>
+				<description>The filename of the Language Identification dictionary. Located in the LWDataSubdir</description>
+				<type>String</type>
+				<multiValued>false</multiValued>
+				<mandatory>true</mandatory>
+			</configurationParameter>
+			<!-- LangID config params -->
+			<configurationParameter>
+				<name>MaxCharsToExamine</name>
+				<description>The maximum numbers of (Unicode) characters to examine when trying to determine the language</description>
+				<type>Integer</type>
+				<multiValued>false</multiValued>
+				<mandatory>true</mandatory>
+			</configurationParameter>
+			<configurationParameter>
+				<name>MaxTopLanguages</name>
+				<description>The maximum numbers of best identified languages to be returned</description>
+				<type>Integer</type>
+				<multiValued>false</multiValued>
+				<mandatory>true</mandatory>
+			</configurationParameter>
+			<configurationParameter>
+				<name>TieDelta</name>
+				<description>If the heuristics finds two language candidates ranked by probability the two values are only being considered actually different if their difference is within a TieDelta percentage points of the whole range. -1 indicates not to attempt finding a tie at all.</description>
+				<type>Integer</type>
+				<multiValued>false</multiValued>
+				<mandatory>false</mandatory>
+			</configurationParameter>
+			<configurationParameter>
+				<name>UnknownProcessing</name>
+				<description>Toggle unknown processing, may have some improved performance</description>
+				<type>Boolean</type>
+				<multiValued>false</multiValued>
+				<mandatory>false</mandatory>
+			</configurationParameter>
+		</configurationParameters>
+		
+		<configurationParameterSettings>
+			<nameValuePair>
+				<name>LWDataSubdir</name>
+				<value>
+					<string>LW</string>
+				</value>
+			</nameValuePair>
+			<nameValuePair>
+				<name>LangIDDictName</name>
+				<value>
+					<string>mul-XX-LangID-6002.dic</string>
+				</value>
+			</nameValuePair>
+			<!-- LangID settings -->
+			<nameValuePair>
+				<name>MaxCharsToExamine</name>
+				<value>
+					<integer>1024</integer>
+				</value>
+			</nameValuePair>
+			<nameValuePair>
+				<name>MaxTopLanguages</name>
+				<value>
+					<integer>0</integer>
+				</value>
+			</nameValuePair>
+			<nameValuePair>
+				<name>TieDelta</name>
+				<value>
+					<integer>-1</integer>
+				</value>
+			</nameValuePair>
+			<nameValuePair>
+				<name>UnknownProcessing</name>
+				<value>
+					<boolean>true</boolean>
+				</value>
+			</nameValuePair>
+		</configurationParameterSettings>
+		
+		<typeSystemDescription>
+			<types>
+				<typeDescription>
+					<name>uima.tcas.DocumentAnnotation</name>
+					<description></description>
+					<supertypeName>uima.tcas.Annotation</supertypeName>
+					<features>
+						<featureDescription>
+							<name>categories</name>
+							<description></description>
+							<rangeTypeName>uima.cas.FSList</rangeTypeName>
+						</featureDescription>
+						<featureDescription>
+							<name>languageCandidates</name>
+							<description></description>
+							<rangeTypeName>uima.cas.FSList</rangeTypeName>
+						</featureDescription>
+						<featureDescription>
+							<name>id</name>
+							<description>Document id, such as a URL</description>
+							<rangeTypeName>uima.cas.String</rangeTypeName>
+						</featureDescription>
+					</features>
+				</typeDescription>
+				<!-- The following type is not used by the LangIDAnnotator! -->
+				<typeDescription>
+					<name>uima.tt.CategoryConfidencePair</name>
+					<description></description>
+					<supertypeName>uima.cas.TOP</supertypeName>
+					<features>
+						<featureDescription>
+							<name>categoryString</name>
+							<description></description>
+							<rangeTypeName>uima.cas.String</rangeTypeName>
+						</featureDescription>
+						<featureDescription>
+							<name>categoryConfidence</name>
+							<description></description>
+							<rangeTypeName>uima.cas.Float</rangeTypeName>
+						</featureDescription>
+						<featureDescription>
+							<name>mostSpecific</name>
+							<description>flag, if category is the most specific for that
+								document in this taxonomy</description>
+							<rangeTypeName>uima.cas.Integer</rangeTypeName>
+						</featureDescription>
+						<featureDescription>
+							<name>taxonomy</name>
+							<description>name of the taxonomy the category belongs to, therefore a document could have categories from different taxonomies</description>
+							<rangeTypeName>uima.cas.String</rangeTypeName>
+						</featureDescription>
+					</features>
+				</typeDescription>
+				<typeDescription>
+					<name>uima.tt.LanguageConfidencePair</name>
+					<description></description>
+					<supertypeName>uima.cas.TOP</supertypeName>
+					<features>
+						<featureDescription>
+							<name>languageConfidence</name>
+							<description>A number between 0 and 1 describing the confidence</description>
+							<rangeTypeName>uima.cas.Float</rangeTypeName>
+						</featureDescription>
+						<featureDescription>
+							<name>language</name>
+							<description>The ISO name of the language</description>
+							<rangeTypeName>uima.cas.String</rangeTypeName>
+						</featureDescription>
+						<featureDescription>
+							<name>languageID</name>
+							<description>The language as TAF number</description>
+							<rangeTypeName>uima.cas.Integer</rangeTypeName>
+						</featureDescription>
+					</features>
+				</typeDescription>
+			</types>
+		</typeSystemDescription>
+		
+		<fsIndexes/>
+		
+		<capabilities>
+			<capability>
+				<inputs/>
+				<outputs>
+					<!-- Lang ID capability -->
+					<feature>uima.tcas.DocumentAnnotation:language</feature>
+					<feature>uima.tcas.DocumentAnnotation:languageCandidates</feature>
+				</outputs>
+				<languagesSupported>
+					<!-- LangID language def. -->
+					<language>x-unspecified</language>
+				</languagesSupported>
+			</capability>
+		</capabilities>
+		
+	</analysisEngineMetaData>
+</taeDescription>

@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cybion</groupId>
+  <artifactId>title_annotator</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>annota il titolo del bando</description>
+  <parent>
+    <artifactId>annotator-superpom</artifactId>
+    <groupId>cybion</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <forkMode>pertest</forkMode>
+          <argLine>-Xms256m -Xmx512m</argLine>
+          <testFailureIgnore>false</testFailureIgnore>
+          <skip>false</skip>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.uima</groupId>
+        <artifactId>PearPackagingMavenPlugin</artifactId>
+        <version>2.3.1</version>
+        <!-- this comment is a flag for changeVersion -->
+        <extensions>true</extensions>
+        <executions>
+          <execution>
+            <id>buildPear</id>
+            <goals>
+              <goal>package</goal>
+            </goals>
+            <!-- needs to run after the jar is built
+       before the assembly is done -->
+            <phase>package</phase>
+            <configuration>
+              <datapath>$main_root/resources</datapath>
+              <componentId>${artifactId}</componentId>
+              <mainComponentDesc>desc/TitleAnnotatorDescriptor.xml</mainComponentDesc>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>desc</directory>
+      </resource>
+    </resources>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>WhitespaceTokenizer</artifactId>
+      <type>jar</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>Tagger</artifactId>
+    </dependency>
+  </dependencies>
+</project>
