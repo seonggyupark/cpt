@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<!-- Contains beans needed by persistence layer (datasource, dao classes, ...) -->
+<beans>
+
+	<bean id="localSessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation"><value>/WEB-INF/hibernate.cfg.xml</value></property>
+	</bean>
+	
+	<bean id="bandoDAO" class="cybion.cpt_web.persistence.BandoDAO">
+		<property name="sessionFactory"><ref bean="localSessionFactory"></ref></property>
+	</bean>
+	<bean id="operatoreDAO" class="cybion.cpt_web.persistence.OperatoreDAO">
+		<property name="sessionFactory"><ref bean="localSessionFactory"></ref></property>
+	</bean>
+	<bean id="fonteDAO" class="cybion.cpt_web.persistence.FonteDAO">
+		<property name="sessionFactory"><ref bean="localSessionFactory"></ref></property>
+	</bean>
+	<bean id="clienteDAO" class="cybion.cpt_web.persistence.ClienteDAO">
+		<property name="sessionFactory"><ref bean="localSessionFactory"></ref></property>
+	</bean>
+	<bean id="paginaDAO" class="cybion.cpt_web.persistence.PaginaDAO">
+		<property name="sessionFactory"> <ref bean="localSessionFactory"></ref></property>
+	</bean>
+	<bean id="navXMLDAO" class="cybion.cpt_web.persistence.NavXMLDAO">
+		<property name="sessionFactory"><ref bean="localSessionFactory"></ref></property>
+	</bean>
+	<bean id="statisticsDAO" class="cybion.cpt_web.persistence.StatisticsDAO">
+		<property name="sessionFactory"><ref bean="localSessionFactory"></ref></property>
+	</bean>
+	<bean id="interesseDAO" class="cybion.cpt_web.persistence.InteresseDAO">
+		<property name="sessionFactory"><ref bean="localSessionFactory"></ref></property>
+	</bean>
+</beans>

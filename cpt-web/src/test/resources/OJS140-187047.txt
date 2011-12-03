@@ -1,0 +1,150 @@
+B-Brussels: study on possible migration to toll systems using satellite positioning and mobile communications technologies by systems using other technologies
+
+2008/S 140-187047
+
+Contract notice
+
+Services
+
+
+SECTION I: CONTRACTING AUTHORITY
+
+I.1) Name, addresses and contact point(s):
+
+European Commission, Directorate-General for Energy and Transport, attn: Edgar Thielmann, Rue De Mot 28, B-1049 Bruxelles/Brussel. Tel.  (32-2) 295 46 15. Fax  (32-2) 296 47 10. E-mail: TREN-ITS@ec.europa.eu.
+
+Internet address(es):
+
+General address of the contracting authority: http://ec.europa.eu/dgs/energy_transport/tenders/index_en.htm.
+
+Address of the buyer profile: http://ec.europa.eu/dgs/energy_transport/tenders/index_en.htm.
+
+Further information can be obtained at:
+
+as in above-mentioned contact point(s).
+
+Specifications and additional documents (including documents for competitive dialogue and a dynamic purchasing system) can be obtained at:
+
+as in above-mentioned contact point(s).
+
+Tenders or requests to participate must be sent to:
+
+as in above-mentioned contact point(s).
+I.2) Type of the contracting authority and main activity or activities:
+European institution/agency or international organisation.
+Other: Transport and Energy.
+The contracting authority is purchasing on behalf of other contracting authorities: no.
+
+
+Section II: Object of the contract
+
+II.1) Description
+II.1.1) Title attributed to the contract by the contracting authority:
+Study on possible migration to toll systems using satellite positioning and mobile communications technologies by systems using other technologies.
+II.1.2) Type of contract and location of works, place of delivery or of performance:
+Services.
+Service category: No 11.
+Main place of performance:
+the tasks will be performed on the Contractor's premises. However, meetings between the contractor and the Commission may be held on Commission premises in B-Bruxelles/Brussel.
+NUTS code: BE10.
+II.1.3) The notice involves:
+A public contract.
+II.1.5) Short description of the contract or purchase(s):
+Directive 2004/52/EC recommends that new electronic toll systems brought into service after its adoption use satellite positioning and mobile communications technologies listed in its Article 2(1). In respect of the possible migration to satellite-based tolling by systems using other technologies, the Commission has to draw up a report by 31.12.2009. This report shall include a study of use of each of the technologies referred to in its Article 2(1), as well as a cost-benefit analysis. Where appropriate, the study report will contain a migration strategy which would be the basis of a legislative proposal to the European Parliament and the Council.
+II.1.6) Common procurement vocabulary (CPV):
+73200000.
+II.1.7) Contract covered by the Government Procurement Agreement (GPA):
+Yes.
+II.1.8) Division into lots:
+No.
+II.1.9) Variants will be accepted:
+No.
+II.2) Quantity or scope of the contract
+II.2.1) Total quantity or scope:
+The total value of the contract has been estimated at 300 men*days, including all expenses of field trips, meetings and conference as well as cost of data, surveys, etc.
+II.2.2) Options:
+No.
+II.3) Duration of the contract or time limit for completion:
+Duration in months: 12 (from the award of the contract).
+
+
+Section III: Legal, economic, financial and technical information
+
+III.1) Conditions relating to the contract
+III.1.1) Deposits and guarantees required:
+For any pre-financing higher than EUR 100 000, a financial guarantee equivalent to the amount of the pre-financing will be requested. Depending on the financial situation of the tenderer, the Commission may ask for the financial guarantee for amounts lower than EUR 100 000.
+III.1.2) Main financing conditions and payment arrangements and/or reference to the relevant provisions regulating them:
+Payments under the contract shall be made in accordance with Article II.4. Payments shall be executed only if the contractor has fulfilled all his contractual obligations by the date on which the invoice is submitted. Payment requests may not be made if payments for previous periods have not been executed as a result of default or negligence on the part of the contractor. 3 payments: pre-financing 30 %, interim payment 40 % and payment of balance at the end 30 %.
+III.1.4) Other particular conditions to which the performance of the contract is subject:
+No.
+III.2) Conditions for participation
+III.2.2) Economic and financial capacity:
+Information and formalities necessary for evaluating if requirements are met:
+tenderers must provide proof of their financial and economic capacity by means of the following documents: the balance sheets or extracts from balance sheets for the last 3 financial years, and a statement of overall turnover and turnover relating to the relevant services for the last 3 financial years. This rule applies to all service providers, regardless of the percentage of tasks they intend to execute, once they have chosen to submit a tender. However, if the tender includes subcontractors whose tasks represent less than 20 % of the contract, those subcontractors are not obliged to provide evidence of their economic and financial capacity.
+III.2.3) Technical capacity:
+Information and formalities necessary for evaluating if requirements are met:
+i. excellent knowledge of the road tolling sector, understanding of the relative merits of microwave and satellite-based toll systems and knowledge of the situation in the European Union;
+ii. demonstrated professional experience in the field of road tolling;
+iii. ability to handle GIS systems similar to the 1 used by the European Commission;
+iv. evidence on easy access to appropriate data sources and contacts with relevant stakeholders. If several service providers/subcontractors are involved in the bid, each of them must have and show that they have the professional and technical capacity to perform the tasks assigned to them.
+Tenderers should provide with their offer detailed curriculum vitae of each staff member responsible for carrying out the work, including his or her educational background, degrees and diplomas, professional experience, research work, publications and linguistic skills.
+The CV's shall be presented, preferably, in accordance to the Commission Recommendation on a common European format for curricula vitae, published in OJ L79 of 22.3.2002, p. 66.
+III.2.4) Reserved contracts:
+No.
+III.3) Conditions specific to services contracts
+III.3.1) Execution of the service is reserved to a particular profession:
+No.
+III.3.2) Legal entities should indicate the names and professional qualifications of the staff responsible for the execution of the service:
+Yes.
+
+
+Section IV: Procedure
+
+IV.1) Type of procedure
+IV.1.1) Type of procedure:
+Open.
+IV.2) Award criteria
+IV.2.1) Award criteria:
+The most economically advantageous tender in terms of the criteria stated in the specifications, in the invitation to tender or to negotiate or in the descriptive document.
+IV.2.2) An electronic auction will be used:
+No.
+IV.3) Administrative information
+IV.3.1) File reference number attributed by the contracting authority:
+TREN/G4/134-2008.
+IV.3.2) Previous publication(s) concerning the same contract:
+No.
+IV.3.3) Conditions for obtaining specifications and additional documents or descriptive document:
+Time limit for receipt of requests for documents or for accessing documents: 29.8.2008.
+Payable documents: no.
+IV.3.4) Time limit for receipt of tenders or requests to participate:
+5.9.2008 (16:00).
+IV.3.6) Language(s) in which tenders or requests to participate may be drawn up:
+Bulgarian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish and Swedish.
+IV.3.8) Conditions for opening tenders:
+15.9.2008 (10:00).
+Persons authorised to be present at the opening of tenders: yes.
+1 representative of each tenderer may attend the official opening.
+
+
+Section VI: Complementary information
+
+VI.1) This is a recurrent procurement:
+No.
+VI.2) Contract related to a project and/or programme financed by EU funds:
+No.
+VI.3) Additional information:
+
+The tender specifications related to this call for tender can be downloaded on the web site of the Directorate-General for Energy and Transport at the following address: http://ec.europa.eu/dgs/energy_transport/tenders/index_en.htm.
+VI.4) Procedures for appeal
+VI.4.1) Body responsible for appeal procedures:
+
+Court of First Instance of the European Communities, rue du Fort Niedergrünewald, L-2925 Luxembourg. Tel. (352) 43 03-1. Fax (352) 43 03-2100. E-mail: CFI.registry@curia.europa.eu. URL: http://curia.europa.eu.
+
+Body responsible for mediation procedures:
+
+The European Ombudsman, 1, avenue du Président Robert Schuman, BP 403, F-67001 Strasbourg Cedex. Tel. (33) 388 17 23 13. Fax (33) 388 17 90 62. E-mail: euro-ombudsman@europarl.europa.eu. URL: http://www.ombudsman.europa.eu.
+VI.4.3) Service from which information about the lodging of appeals may be obtained:
+
+Court of First Instance of the European Communities, rue du Fort Niedergrünewald, L-2925 Luxembourg. Tel. (352) 43 03-1. Fax (352) 43 03-2100. E-mail: CFI.registry@curia.europa.eu. URL: http://curia.europa.eu.
+VI.5) Date of dispatch of this notice:
+10.7.2008. 

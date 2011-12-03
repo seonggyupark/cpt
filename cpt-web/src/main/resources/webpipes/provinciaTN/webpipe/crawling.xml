@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigation><entrypoint url="http://www.appalti.provincia.tn.it/bandiappalti/-bandi/" pageclass="pageclass_0" /><model><pageclass type="pageclass_0"><classrequest pageclass="pageclass_0" type="pageclass_02pageclass_1" expectedtype="pageclass_1"><clickonall xpath="//HTML[1]/BODY[1]/DIV[3]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/UL[1]/LI/DIV[1]/A[1]" /></classrequest></pageclass><pageclass type="pageclass_1" /></model></navigation>

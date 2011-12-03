@@ -1,0 +1,71 @@
+# MySQL Navigator Xport
+# Database: cybion_db
+# root@localhost
+
+# CREATE DATABASE cybion_db;
+# USE cybion_db;
+
+#
+# Table structure for table 'BANDI'
+#
+
+# DROP TABLE IF EXISTS BANDI;
+CREATE TABLE BANDI (
+  id_bando int(10) NOT NULL,
+  titolo varchar(25) NOT NULL,
+  oggetto varchar(50) NOT NULL,
+  ente varchar(50) NOT NULL,
+  beneficiario varchar(250) NOT NULL,
+  dataScadenza varchar(25) NOT NULL,
+  linkAllaFonte varchar(50) NOT NULL,
+  budget varchar(25) default NULL,
+  attivita varchar(100) default NULL,
+  percFinanziamento double default '0',
+  tipoFinanziamento varchar(50) default NULL,
+  testoIntegrale text NOT NULL,
+  timestamp timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  regGeografica varchar(15) default NULL,
+  note varchar(50) default NULL,
+  PRIMARY KEY  (id_bando)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table 'BANDI'
+#
+
+
+#
+# Table structure for table 'FONTI'
+#
+
+# DROP TABLE IF EXISTS FONTI;
+CREATE TABLE FONTI (
+  id_xml_nav int(10) NOT NULL,
+  id_fonte int(10) NOT NULL,
+  nome varchar(25) NOT NULL,
+  link varchar(50) NOT NULL,
+  PRIMARY KEY  (id_fonte),
+  KEY id_xml_nav (id_xml_nav)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table 'FONTI'
+#
+
+
+#
+# Table structure for table 'XMLNAV'
+#
+
+# DROP TABLE IF EXISTS XMLNAV;
+CREATE TABLE XMLNAV (
+  id_xml_nav int(10) NOT NULL,
+  content text NOT NULL,
+  PRIMARY KEY  (id_xml_nav)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+#
+# Dumping data for table 'XMLNAV'
+#
+
+

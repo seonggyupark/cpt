@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+
+
+	<bean id="broker" class="cybion.cpt_web.persistence.PersistenceBroker" factory-method="getInstance">
+		<property name="navXMLDAO" ref="navXMLDAO" />
+		<property name="bandoDAO" ref="bandoDAO" />
+		<property name="clienteDAO" ref="clienteDAO" />
+		<property name="operatoreDAO" ref="operatoreDAO" />
+		<property name="fonteDAO" ref="fonteDAO" />
+		<property name="paginaDAO" ref="paginaDAO" />
+		<property name="statisticsDAO" ref="statisticsDAO" />
+		<property name="interesseDAO" ref="interesseDAO" />
+	</bean>
+
+	
+	<bean id="loginAction" class="cybion.cpt_web.controller.action.LoginAction">
+		<property name="broker" ref="broker"/>
+	</bean>
+	<bean id="prelevaXMLAction" class="cybion.cpt_web.controller.action.PrelevaXMLAction" >
+		<property name="broker" ref="broker" />
+	</bean>
+	<bean id="crawlingAction" class="cybion.cpt_web.controller.action.CrawlingAction" >
+		<property name="broker" ref="broker" />
+	</bean>
+	<bean id="insertFonteAction" class="cybion.cpt_web.controller.action.InsertFonteAction" >
+		<property name="broker" ref="broker" />
+		<property name="docUtils" ref="docUtils" />
+	</bean>
+	<bean id="loadInteressiAction" class="cybion.cpt_web.controller.action.LoadInteressiAction">
+		<property name="broker" ref="broker"/>
+	</bean>
+	<bean id="viewClientiAction" class="cybion.cpt_web.controller.action.ViewClientiAction">
+		<property name="broker" ref="broker" />
+	</bean>
+	<bean id="insertInteresseAction" class="cybion.cpt_web.controller.action.InsertInteresseAction">
+		<property name="broker" ref="broker" />
+	</bean>
+	<bean id="insertClienteAction" class="cybion.cpt_web.controller.action.InsertClienteAction">
+		<property name="broker" ref="broker" />
+	</bean>
+	<bean id="getAllXMLAction" class="cybion.cpt_web.controller.action.GetAllXMLAction" >
+		<property name="broker" ref="broker" />
+	</bean>
+	<bean id="viewFontiAction" class="cybion.cpt_web.controller.action.ViewFontiAction" >
+		<property name="broker" ref="broker" />
+	</bean>
+	<bean id="viewPagesAction" class="cybion.cpt_web.controller.action.ViewPagesAction" >
+		<property name="broker" ref="broker" />
+	</bean>
+	<bean id="editFonteAction" class="cybion.cpt_web.controller.action.EditFonteAction" >
+		<property name="broker" ref="broker" />
+	</bean>
+	<bean id="modifyFonteAction" class="cybion.cpt_web.controller.action.ModifyFonteAction">
+		<property name="broker" ref="broker" />
+		<property name="docUtils" ref="docUtils" />
+	</bean>
+	<bean id="deleteFonteAction" class="cybion.cpt_web.controller.action.DeleteFonteAction">
+		<property name="broker" ref="broker" />
+		<property name="docUtils" ref="docUtils" />
+	</bean>
+	<bean id="docUtils" class="cybion.cpt_web.business.utility.DocumentUtils">
+		<property name="executor" ref="xmlAdapterExecutor" />
+	</bean>
+	<bean id="xmlAdapterExecutor" class="cybion.cpt_web.business.XMLAdapterExecutor">
+		<property name="crawlingAdapter" ref="crawlingAdapter" />
+		<property name="wrappingAdapter" ref="wrappingAdapter" />
+	</bean>
+	<bean id="crawlingAdapter" class="cybion.cpt_web.business.utility.CrawlingSpecificationFirefoxPluginAdapter">
+	</bean>
+	<bean id="wrappingAdapter" class="cybion.cpt_web.business.utility.WrappingSpecificationFirefoxPluginAdapter">
+	</bean>
+	<bean id="viewAnnotationsAction" class="cybion.cpt_web.controller.action.ViewAnnotationsAction" >
+		<property name="broker" ref="broker" />
+	</bean>
+	
+	<bean id="checkFonteAction" class="cybion.cpt_web.controller.action.CheckFonteAction" >
+		<property name="broker" ref="broker" />
+	</bean>
+		
+</beans>

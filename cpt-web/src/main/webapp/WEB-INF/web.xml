@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+ <display-name>cpt-web</display-name>
+ <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  <welcome-file>index.htm</welcome-file>
+  <welcome-file>index.jsp</welcome-file>
+  <welcome-file>default.html</welcome-file>
+  <welcome-file>default.htm</welcome-file>
+  <welcome-file>default.jsp</welcome-file>
+ </welcome-file-list>
+ <servlet>
+  <servlet-name>simple-server-test</servlet-name>
+  <servlet-class>
+   org.apache.uima.simpleserver.servlet.SimpleServerServlet</servlet-class>
+  <!-- Define the path to the tokenizer pear file -->
+  <init-param>
+   <param-name>PearPath</param-name>
+   <param-value>
+                WEB-INF/resources/WhitespaceTokenizer.pear
+            </param-value>
+  </init-param>
+ </servlet>
+ <servlet>
+  <servlet-name>abstract-test</servlet-name>
+  <servlet-class>
+   org.apache.uima.simpleserver.servlet.SimpleServerServlet</servlet-class>
+  <!-- Define the path to the tokenizer pear file -->
+  <init-param>
+   <param-name>PearPath</param-name>
+   <param-value>
+                WEB-INF/resources/abstract_annotator.pear
+            </param-value>
+  </init-param>
+ </servlet>
+ <servlet>
+  <servlet-name>activity-test</servlet-name>
+  <servlet-class>
+   org.apache.uima.simpleserver.servlet.SimpleServerServlet</servlet-class>
+  <!-- Define the path to the tokenizer pear file -->
+  <init-param>
+   <param-name>PearPath</param-name>
+   <param-value>
+                WEB-INF/resources/activity_annotator.pear
+            </param-value>
+  </init-param>
+ </servlet>
+ <servlet>
+  <servlet-name>beneficiary-test</servlet-name>
+  <servlet-class>
+   org.apache.uima.simpleserver.servlet.SimpleServerServlet</servlet-class>
+  <!-- Define the path to the tokenizer pear file -->
+  <init-param>
+   <param-name>PearPath</param-name>
+   <param-value>
+                WEB-INF/resources/beneficiary_annotator.pear
+            </param-value>
+  </init-param>
+ </servlet>
+  <servlet>
+  <servlet-name>cpt-test</servlet-name>
+  <servlet-class>
+   org.apache.uima.simpleserver.servlet.SimpleServerServlet</servlet-class>
+  <!-- Define the path to the tokenizer pear file -->
+  <init-param>
+   <param-name>PearPath</param-name>
+   <param-value>
+                WEB-INF/resources/aggregate_annotator.pear
+            </param-value>
+  </init-param>
+ </servlet>
+ <servlet>
+  <servlet-name>cybionController</servlet-name>
+  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>context</servlet-name>
+  <servlet-class>org.springframework.web.context.ContextLoaderServlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+ </servlet>
+ <context-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>/WEB-INF/cybionController-servlet.xml, /WEB-INF/cybionController-service.xml, /WEB-INF/persistenceContext.xml, /WEB-INF/scheduler-context.xml</param-value>
+ </context-param>
+ <context-param>
+  <param-name>log4jConfigLocation</param-name>
+  <param-value>/WEB-INF/log4j.properties</param-value>
+ </context-param>
+ <context-param>
+  <param-name>log4jRefreshInterval</param-name>
+  <param-value>1000</param-value>
+ </context-param>
+ <listener>
+  <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+ </listener>
+ <servlet-mapping>
+  <servlet-name>cybionController</servlet-name>
+  <url-pattern>*.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>simple-server-test</servlet-name>
+  <url-pattern>/white</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>abstract-test</servlet-name>
+  <url-pattern>/abstract</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>activity-test</servlet-name>
+  <url-pattern>/activity</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>beneficiary-test</servlet-name>
+  <url-pattern>/beneficiary</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>cpt-test</servlet-name>
+  <url-pattern>/cpt</url-pattern>
+ </servlet-mapping>
+ <jsp-config>
+  <taglib>
+   <taglib-uri>http://java.sun.com/jstl/fmt</taglib-uri>
+   <taglib-location>/WEB-INF/fmt.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+   <taglib-uri>http://java.sun.com/jstl/fmt-rt</taglib-uri>
+   <taglib-location>/WEB-INF/fmt-rt.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+   <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+   <taglib-location>/WEB-INF/c.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+   <taglib-uri>http://java.sun.com/jstl/core-rt</taglib-uri>
+   <taglib-location>/WEB-INF/c-rt.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+   <taglib-uri>http://java.sun.com/jstl/sql</taglib-uri>
+   <taglib-location>/WEB-INF/sql.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+   <taglib-uri>http://java.sun.com/jstl/sql-rt</taglib-uri>
+   <taglib-location>/WEB-INF/sql-rt.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+   <taglib-uri>http://java.sun.com/jstl/x</taglib-uri>
+   <taglib-location>/WEB-INF/x.tld</taglib-location>
+  </taglib>
+
+  <taglib>
+   <taglib-uri>http://java.sun.com/jstl/x-rt</taglib-uri>
+   <taglib-location>/WEB-INF/x-rt.tld</taglib-location>
+  </taglib>
+  <taglib>
+   <taglib-uri>/spring</taglib-uri>
+   <taglib-location>/WEB-INF/spring.tld</taglib-location>
+  </taglib>
+ </jsp-config>
+</web-app>

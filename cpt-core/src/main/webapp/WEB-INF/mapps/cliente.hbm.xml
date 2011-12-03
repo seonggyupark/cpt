@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cybion.cpt_web.model.Cliente" table="CLIENTI">
+		<id name="idCliente" column="id_cliente"> <generator class="native"/> </id>
+		<property name="nome" column="nome" />
+		<property name="email" type="string"/>
+		<set name="setInteressi" lazy="false" table="CLIENTI_INTERESSI" cascade="all">
+		<key column="id_cliente"/>
+		<many-to-many column="id_interesse" class="cybion.cpt_web.model.Interesse"/>
+	</set>
+		
+	</class>
+</hibernate-mapping>

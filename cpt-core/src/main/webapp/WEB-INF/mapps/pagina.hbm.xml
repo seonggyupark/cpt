@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cybion.cpt_web.model.Pagina" table="PAGINE">
+		<id name="idPagina" column="id_pagina"> <generator class="native"/> </id>
+		<property name="content" type="text"/>
+		<property name="data" type="timestamp" />
+		<property name="uri" type="text" />
+		<property name="idFonte" type="integer" column="id_fonte"/>
+	</class>
+</hibernate-mapping>

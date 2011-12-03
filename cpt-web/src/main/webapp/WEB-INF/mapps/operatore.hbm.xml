@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cybion.cpt_web.model.Operatore" table="OPERATORI">
+		<id name="idOperatore" column="id_operatore"> <generator class="native"/> </id>
+		<property name="cognome" />
+		<property name="nome" />
+		<property name="password" />
+		<property name="userID" />
+		<property name="idOperatore" />
+	</class>
+</hibernate-mapping>

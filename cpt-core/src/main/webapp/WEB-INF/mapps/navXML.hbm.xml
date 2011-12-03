@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="cybion.cpt_web.model.NavXML" table="XMLNAV">
+		<id name="idNavXML" column="id_xml_nav"> <generator class="native" /></id>
+		<property name="contentCrawling" column="content_crawling" type="text"/>
+		<property name="contentWrapping" column="content_wrapping" type="text" />
+		<property name="description" />
+</class>
+</hibernate-mapping>

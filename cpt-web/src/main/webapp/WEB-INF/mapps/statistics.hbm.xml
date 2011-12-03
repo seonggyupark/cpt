@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cybion.cpt_web.model.Statistics" table="STATISTICHE">
+		<id name="idFonte" column="id_fonte"> <generator class="assigned"/> </id>
+		<property name="media" type="double"/>
+		<property name="contatore" type="integer" />
+		<property name="last" type="integer"/>
+	</class>
+</hibernate-mapping>

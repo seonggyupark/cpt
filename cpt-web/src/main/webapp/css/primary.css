@@ -1,0 +1,130 @@
+@CHARSET "UTF-8";
+
+html {
+	background-color: white;
+	color: black;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
+div {
+	border-width: 0 0 0.1em 0;
+	border-style: solid;
+	border-color: #0099cc;
+}
+
+div#body {
+}
+
+div#footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+div.form {
+	width: 75%;
+	border-color: #0099cc;
+	border-width: 0.1em 0.1em 0.1em 0.1em;
+	margin-right: 0;
+	margin-left: 0;
+	padding-top: 2em;
+	padding-bottom: 7em;
+	text-align: left;
+	clear: both;
+	display:block;
+}
+
+div.form h3 {
+	text-align: left;
+	display: block;
+}
+
+div.row {
+	clear: both;
+}
+
+label {
+	width: 45%;
+	float: left;
+	text-align: right;
+}
+
+input {
+	width: 45%;
+	float: right;
+	text-align: left;
+}
+
+select {
+	width: 45%;
+	float: right;
+	text-align: left;
+}
+
+a.extern {
+	text-decoration: none;
+	color: #ffff00;
+}
+
+a.extern:hover {
+	color: #000000;
+	background-color: #ffff00;
+}
+
+a.extern:visited {
+	color: #339900;
+}
+
+#menu tr td a {
+	color: #0099cc;
+	text-decoration: none;
+}
+
+#menu tr td a:hover {
+	color: #ffffff;
+	background-color: #0099cc;
+}
+
+a.hover {
+	border: none;
+}
+
+#menu tr td a:visited {
+	color: #990000;
+}
+
+#oldmenu {
+	display: block;
+	clear: both;
+	border: 1em;
+	margin-left: 1em;
+	color: yellow;
+}
+
+#menu ul {
+	padding-left: 0;
+	list-style: none;
+}
+#header {
+	background-color: silver;
+}
+#title {
+	background-color: beige;
+}
+#menu {
+	border-style: hidden;
+}
+
+
+
+.menuselected {
+	background-color: silver;
+}

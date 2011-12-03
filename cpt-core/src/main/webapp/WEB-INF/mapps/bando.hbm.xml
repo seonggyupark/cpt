@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cybion.cpt_web.model.Bando" table="BANDI">
+		<id name="idBando" column="id_bando"> <generator class="native"/> </id>
+		<property name="titolo" />
+		<property name="oggetto" />
+		<property name="ente" />
+		<property name="beneficiario" />
+		<property name="dataScadenza"/>
+		<property name="linkAllaFonte" />
+		<property name="budget" type="double"/>
+		<property name="attivita" />
+		<property name="percFinanziamento" type="double"/>
+		<property name="tipoFinanziamento" />
+		<property name="testoIntegrale" />
+		<property name="timestamp" type="timestamp" column="timestamp"/>
+		<property name="regGeografica" />
+		<property name="note" />
+		<!-- ################DA AGGIUNGERE DOPO ######## <property name="tagList" /> --> 
+	</class>
+</hibernate-mapping>

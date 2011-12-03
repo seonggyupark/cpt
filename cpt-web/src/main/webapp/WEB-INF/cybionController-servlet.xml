@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<!--
+		the application context definition for the springapp DispatcherServlet
+	-->
+
+	<bean id="simpleUrlMapping"	class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/loginController.do">loginController</prop>
+				<prop key="/getNavXMLController.do">getNavXMLController</prop>
+				<prop key="/crawling.do">crawlingController</prop>
+				<prop key="/insertFonte.do">insertFonteController</prop>
+				<prop key="/viewNavXML.do">viewNavXMLController</prop>		
+				<prop key="/viewFonti.do">viewFontiController</prop>
+				<prop key="/viewPages.do">viewPagesController</prop>
+				<prop key="/viewAnnotations.do">viewAnnotationsController</prop>
+				<prop key="/loadInteressi.do">loadInteressiController</prop>
+				<prop key="/loadInteressiPerFonte.do">loadInteressiPerFonteController</prop>
+				<prop key="/insertCliente.do">insertClienteController</prop>
+				<prop key="/viewClienti.do">viewClientiController</prop>
+				<prop key="/insertInteresse.do">insertInteresseController</prop>
+				<prop key="/editFonte.do">editFonteController</prop>
+				<prop key="/modifyFonte.do">modifyFonteController</prop>
+				<prop key="/deleteFonte.do">deleteFonteController</prop>
+				<prop key="/checkFonte.do">checkFonteController</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="jstlViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass">
+			<value>org.springframework.web.servlet.view.JstlView
+			</value>
+		</property>
+		<property name="prefix">
+			<value></value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<!-- Message resource declaration -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename">
+			<value>config</value>
+		</property>
+	</bean>
+
+
+	<bean id="operatoreValidator" class="cybion.cpt_web.controller.validator.OperatoreValidator" />
+	
+
+	<bean id="loginController" class="cybion.cpt_web.controller.LoginController">
+		<property name="validator" ref="operatoreValidator" />
+		<property name="formView" value="index" />
+		<property name="successView" value="viewFonti" />
+		<property name="action" ref="loginAction"/>
+	</bean>
+
+
+	<bean id="getNavXMLController" class="cybion.cpt_web.controller.PrelevaNavXMLController">
+		<property name="action" ref="prelevaXMLAction"/>
+	</bean>
+	<bean id="insertFonteController" class="cybion.cpt_web.controller.InsertFonteController">
+		<property name="action" ref="insertFonteAction" />
+	</bean>
+	<bean id="crawlingController" class="cybion.cpt_web.controller.CrawlingController">
+		<property name="action" ref="crawlingAction" />
+	</bean>
+	<bean id="viewNavXMLController" class="cybion.cpt_web.controller.ViewNavXMLController">
+		<property name="action" ref="getAllXMLAction" />
+	</bean>
+	<bean id="viewFontiController" class="cybion.cpt_web.controller.ViewFontiController">
+		<property name="action" ref="viewFontiAction" />
+	</bean>
+	<bean id="viewPagesController" class="cybion.cpt_web.controller.ViewPagesController">
+		<property name="action" ref="viewPagesAction"/>
+	</bean>
+	<bean id="viewAnnotationsController" class="cybion.cpt_web.controller.UIMAStartController">
+		<property name="action" ref="viewAnnotationsAction"/>
+	</bean>
+	<bean id="viewClientiController" class="cybion.cpt_web.controller.ViewClientiController">
+		<property name="action" ref="viewClientiAction" />
+	</bean>
+	<bean id="loadInteressiController" class="cybion.cpt_web.controller.LoadInteressiController">
+		<property name="action" ref="loadInteressiAction" />
+	</bean>
+	<bean id="loadInteressiPerFonteController" class="cybion.cpt_web.controller.LoadInteressiPerFonteController">
+		<property name="action" ref="loadInteressiAction" />
+	</bean>
+	<bean id="insertClienteController" class="cybion.cpt_web.controller.InsertClienteController">
+		<property name="action" ref="insertClienteAction"/>
+	</bean>
+	<bean id="insertInteresseController" class="cybion.cpt_web.controller.InsertInteresseController">
+		<property name="action" ref="insertInteresseAction" />
+	</bean>
+	<bean id="editFonteController" class="cybion.cpt_web.controller.EditFonteController">
+		<property name="action" ref="editFonteAction" />
+	</bean>
+	<bean id="modifyFonteController" class="cybion.cpt_web.controller.ModifyFonteController">
+		<property name="action" ref="modifyFonteAction" />
+	</bean>
+	<bean id="deleteFonteController" class="cybion.cpt_web.controller.DeleteFonteController">
+		<property name="action" ref="deleteFonteAction" />
+	</bean>
+	
+	<bean id="checkFonteController" class="cybion.cpt_web.controller.CheckFonteController">
+		<property name="action" ref="checkFonteAction"/>
+	</bean>
+	
+	
+</beans>
