@@ -12,36 +12,14 @@
             <name>Tommaso Teofili</name>
             <email>tommaso.teofili@gmail.com</email>
         </developer>
-        <developer>
-            <id>piolo</id>
-            <name>Marco Piolo</name>
-            <email>marco.piolo@gmail.com</email>
-        </developer>
     </developers>
-    <contributors>
-        <contributor>
-            <name>Gianluca Angelici</name>
-            <email>angelici@cybion.it</email>
-        </contributor>
-        <contributor>
-            <name>Jerome Valette</name>
-            <email>valette@cybion.it</email>
-        </contributor>
-    </contributors>
-    <scm>
-        <connection>scm:svn:svn+ssh://sinai.dia.uniroma3.it/var/svn-repos/macpi/trunk/</connection>
-    </scm>
-    <organization>
-        <name>Cybion Srl</name>
-        <url>www.cybion.it</url>
-    </organization>
     <build>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.6</source>
+                    <target>1.6</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
