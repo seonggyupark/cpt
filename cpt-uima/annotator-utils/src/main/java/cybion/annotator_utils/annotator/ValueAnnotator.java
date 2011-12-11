@@ -1,10 +1,6 @@
 package cybion.annotator_utils.annotator;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import cybion.uima.ts.ValueAnnotation;
-
 import org.apache.uima.SentenceAnnotation;
 import org.apache.uima.UimaContext;
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
@@ -14,10 +10,13 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.resource.ResourceInitializationException;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ValueAnnotator extends JCasAnnotator_ImplBase {
 
-  private static final String[] currencies = { "Euro", "euro", "Dollar", "dollar", "dollars",
-      "Dollars", "Pound", "Pounds", "pound", "pounds", "$", "Û", "£" };
+  private static final String[] currencies = {"Euro", "euro", "Dollar", "dollar", "dollars",
+          "Dollars", "Pound", "Pounds", "pound", "pounds", "$", "Â£", "â‚¬"};
 
   private List<SentenceAnnotation> sentenceCandidates;
 

@@ -34,8 +34,8 @@ public abstract class CybionAbstractAnnotator extends JCasAnnotator_ImplBase {
   public void process(JCas jCas) throws AnalysisEngineProcessException {
     boolean extracted = false;
 //    this.getContext().getLogger().log(Level.INFO, "Processing document" + jCas.getDocumentText());
-//    jCas.getDocumentText().replaceAll("à", "a").replaceAll("è", "e").replaceAll("ò", "o")
-//            .replaceAll("ù", "u").replaceAll("ì", "i").replaceAll("é", "e");
+//    jCas.getDocumentText().replaceAll("√†", "a").replaceAll("√®", "e").replaceAll("√≤", "o")
+//            .replaceAll("√π", "u").replaceAll("√¨", "i").replaceAll("√©", "e");
     try {
       extracted = extractWithSimpleStructure(jCas);
     } catch (Exception e) {
