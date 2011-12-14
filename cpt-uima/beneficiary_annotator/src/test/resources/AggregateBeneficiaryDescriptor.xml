@@ -6,9 +6,6 @@
     <delegateAnalysisEngine key="BeneficiaryAnnotatorDescriptor">
       <import name="BeneficiaryAnnotatorDescriptor"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="TextLanguageDetectionAEDescriptor">
-      <import location="TextLanguageDetectionAEDescriptor.xml"/>
-    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="SimpleLanguageAnnotatorAggregateDescriptor">
       <import name="SimpleLanguageAnnotatorAggregateDescriptor"/>
     </delegateAnalysisEngine>
@@ -30,7 +27,6 @@
       <fixedFlow>
         <node>WhitespaceTokenizer</node>
         <node>HmmTagger</node>
-        <node>TextLanguageDetectionAEDescriptor</node>
         <node>SimpleLanguageAnnotatorAggregateDescriptor</node>
         <node>BeneficiaryAnnotatorDescriptor</node>
       </fixedFlow>

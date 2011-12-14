@@ -12,12 +12,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>beneficiary_annotator</name>
   <description>extract tenders' beneficary/ies</description>
-  <url>http://maven.apache.org</url>
   <dependencies>
-    <dependency>
-      <groupId>org.apache.uima</groupId>
-      <artifactId>alchemy-annotator</artifactId>
-    </dependency>
     <dependency>
       <groupId>cybion</groupId>
       <artifactId>language-annotator</artifactId>
