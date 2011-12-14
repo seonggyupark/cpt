@@ -62,10 +62,5 @@
       <version>0.0.1-SNAPSHOT</version>
       <scope>runtime</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.uima</groupId>
-      <artifactId>alchemy-annotator</artifactId>
-      <scope>runtime</scope>
-    </dependency>
   </dependencies>
 </project>

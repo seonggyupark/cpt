@@ -1,9 +1,9 @@
 package cybion.activity_annotator;
 
-import java.util.List;
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 
 public class ActivityPatternProvider {
@@ -29,8 +29,8 @@ public class ActivityPatternProvider {
   private List<Pattern> getActivityItalianPatterns() {
     List<Pattern> itPatterns = new ArrayList<Pattern>();
     itPatterns.add(Pattern.compile("(?i)(?u).*(per).*(sviluppo).*(di|del|della).*"));
-    itPatterns.add(Pattern.compile("(?i)(?u).*(per).*(attivita|attività).*"));
-    itPatterns.add(Pattern.compile("(?i)(?u).*(al fine di).*(attivita|attività).*"));
+    itPatterns.add(Pattern.compile("(?i)(?u).*(per).*(attivita|attivit√†).*"));
+    itPatterns.add(Pattern.compile("(?i)(?u).*(al fine di).*(attivita|attivit√†).*"));
     return itPatterns;
   }
 

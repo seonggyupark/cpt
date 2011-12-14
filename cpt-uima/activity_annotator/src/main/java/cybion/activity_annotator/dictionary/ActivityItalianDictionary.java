@@ -1,17 +1,17 @@
 package cybion.activity_annotator.dictionary;
 
+import cybion.annotator_utils.TermsDictionary;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import cybion.annotator_utils.TermsDictionary;
-
 public class ActivityItalianDictionary implements TermsDictionary {
-  
+
   private static final List<String> terms = new ArrayList<String>();
-  
+
   public ActivityItalianDictionary() {
-    terms.add("attività");
-    terms.add("Attività");
+    terms.add("attivit√†");
+    terms.add("Attivit√†");
     terms.add("Attivita");
     terms.add("attivita");
   }
