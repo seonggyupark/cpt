@@ -8,8 +8,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>cybion</groupId>
   <artifactId>language-annotator</artifactId>
-  <url>http://incubator.apache.org/uima</url>
-  <name>Apache UIMA Java Annotator - SimpleLanguageAnnotator</name>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
     <dependency>
