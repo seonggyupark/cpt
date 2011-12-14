@@ -12,7 +12,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>budget_annotator</name>
   <description>extract tenders' budget</description>
-  <url>http://maven.apache.org</url>
   <build>
     <resources>
       <resource>
@@ -49,7 +48,6 @@
     <dependency>
       <groupId>org.apache.uima</groupId>
       <artifactId>WhitespaceTokenizer</artifactId>
-      <type>jar</type>
     </dependency>
     <dependency>
       <groupId>org.apache.uima</groupId>
