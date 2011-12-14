@@ -3,9 +3,6 @@
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>false</primitive>
   <delegateAnalysisEngineSpecifiers>
-    <delegateAnalysisEngine key="TextLanguageDetectionAEDescriptor">
-      <import location="TextLanguageDetectionAEDescriptor.xml"/>
-    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="SimpleLanguageAnnotatorAggregateDescriptor">
       <import name="SimpleLanguageAnnotatorAggregateDescriptor"/>
     </delegateAnalysisEngine>
@@ -33,7 +30,6 @@
       <fixedFlow>
         <node>WhitespaceTokenizer</node>
         <node>HmmTagger</node>
-        <node>TextLanguageDetectionAEDescriptor</node>
         <node>SimpleLanguageAnnotatorAggregateDescriptor</node>
         <node>DateAnnotatorAEDescriptor</node>
         <node>ExpirationDateAnnotatorDescriptor</node>

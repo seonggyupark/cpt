@@ -52,10 +52,5 @@
       <type>jar</type>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.uima</groupId>
-      <artifactId>alchemy-annotator</artifactId>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 </project>
