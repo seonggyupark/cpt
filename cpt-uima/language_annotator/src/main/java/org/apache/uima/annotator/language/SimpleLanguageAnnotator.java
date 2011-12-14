@@ -1,9 +1,5 @@
 package org.apache.uima.annotator.language;
 
-import java.util.Iterator;
-import java.util.List;
-
-import org.apache.uima.DictionaryEntry;
 import org.apache.uima.EnglishDictionaryEntry;
 import org.apache.uima.ItalianDictionaryEntry;
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
@@ -21,9 +17,9 @@ public class SimpleLanguageAnnotator extends JCasAnnotator_ImplBase {
     AnnotationIndex englishDictionaryAnnotationsIndex = aJCas.getAnnotationIndex(EnglishDictionaryEntry.type);
     String language;
 
-    if (italianDictionaryAnnotationsIndex.size()==englishDictionaryAnnotationsIndex.size())
+    if (italianDictionaryAnnotationsIndex.size() == englishDictionaryAnnotationsIndex.size())
       language = "x-unspecified";
-    else if (italianDictionaryAnnotationsIndex.size()<englishDictionaryAnnotationsIndex.size())
+    else if (italianDictionaryAnnotationsIndex.size() < englishDictionaryAnnotationsIndex.size())
       language = "en";
     else
       language = "it";

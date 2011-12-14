@@ -1,7 +1,6 @@
 package org.apache.uima.annotator.language;
 
 import org.apache.uima.cas.CAS;
-import org.apache.uima.cas.CASException;
 import org.apache.uima.test.junit_extension.AnnotatorTester;
 import org.junit.Test;
 
@@ -30,7 +29,7 @@ public class SimpleLanguageAnnotatorTest {
   public void testEnglishText() {
     try {
       AnnotatorTester annotatorTester = new AnnotatorTester(mockedDescPath);
-      String text = "La Divisione di Prevenzione e Genetica Oncologica dell?Istituto Europeo di Oncologia bandisce una borsa di studio annuale di 18.000,00 Euro lordi, con possibilit‡ di rinnovo, per lo sviluppo del progetto di ricerca ?Optimizing endocrine therapies for the individual patient with breast cancer: identifying targets for tailored treatment?.";
+      String text = "La Divisione di Prevenzione e Genetica Oncologica dell?Istituto Europeo di Oncologia bandisce una borsa di studio annuale di 18.000,00 Euro lordi, con possibilit√† di rinnovo, per lo sviluppo del progetto di ricerca ?Optimizing endocrine therapies for the individual patient with breast cancer: identifying targets for tailored treatment?.";
       testAnnotator(text, annotatorTester, "it");
     } catch (Exception e) {
       e.printStackTrace();
@@ -38,9 +37,9 @@ public class SimpleLanguageAnnotatorTest {
     }
   }
 
-  private void testAnnotator(String text, AnnotatorTester annotatorTester, String expected) throws Exception, CASException {
+  private void testAnnotator(String text, AnnotatorTester annotatorTester, String expected) throws Exception {
     CAS cas = annotatorTester.performTest(text, "x-unspecified");
-    assertTrue("I was not expecting "+cas.getDocumentLanguage(),cas.getDocumentLanguage().equals(expected));
+    assertTrue("I was not expecting " + cas.getDocumentLanguage(), cas.getDocumentLanguage().equals(expected));
   }
 
 }
