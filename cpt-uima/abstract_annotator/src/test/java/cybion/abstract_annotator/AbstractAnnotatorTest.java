@@ -1,17 +1,16 @@
 package cybion.abstract_annotator;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
+import cybion.annotator_utils.test.TestUtils;
 import org.junit.Test;
 
-import cybion.annotator_utils.test.TestUtils;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 public class AbstractAnnotatorTest {
 
   private static final String FEATURE_NAME = "abstract";
 
-  private static final String ANNOTATOR_DESCRIPTOR = "src/test/resources/AggregateAbstractDescriptor.xml";
+  private static final String ANNOTATOR_DESCRIPTOR = "desc/AggregateAbstractDescriptor.xml";
 
   @Test
   public void test1() {
@@ -42,7 +41,7 @@ public class AbstractAnnotatorTest {
     try {
       String abstractText = TestUtils.testWithFileAndCache(ANNOTATOR_DESCRIPTOR, "bandi/EuropeAid.txt",
               FEATURE_NAME);
-      assertTrue(abstractText == null);
+      assertTrue("found abstract '" + abstractText + "'", abstractText == null);
     } catch (Exception e) {
       e.printStackTrace();
       fail(e.getLocalizedMessage());

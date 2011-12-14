@@ -35,14 +35,14 @@ public class CybionSummaryTextAnnotator extends CybionAbstractAnnotator {
     String termsAbstract = termsRetriever.retrieveAbstract(jCas);
     if (termsAbstract != null && !termsAbstract.equals("")) {
       getBando(jCas).setAbstract(termsAbstract);
-      this.getContext().getLogger().log(Level.INFO,"abstract found with terms retriever");
+      this.getContext().getLogger().log(Level.INFO, "abstract found with terms retriever");
     } else {
       // recovery
       try {
         String recoveryAbstract = recoveryRetriver.retrieveAbstract(jCas);
         getBando(jCas).setAbstract(recoveryAbstract);
-        this.getContext().getLogger().log(Level.INFO,"abstract found with recovery retriever");
-      } catch (AssertionError e) {
+        this.getContext().getLogger().log(Level.INFO, "abstract found with recovery retriever");
+      } catch (Throwable e) {
         this.getContext().getLogger().log(Level.WARNING, "no abstract found");
       }
     }

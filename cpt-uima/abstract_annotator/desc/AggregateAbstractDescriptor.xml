@@ -6,20 +6,11 @@
     <delegateAnalysisEngine key="AbstractAnnotatorDescriptor">
       <import name="AbstractAnnotatorDescriptor"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="TextLanguageDetectionAEDescriptor">
-      <import location="TextLanguageDetectionAEDescriptor.xml"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="TextRankedEntityExtractionAEDescriptor">
-      <import location="TextRankedEntityExtractionAEDescriptor.xml"/>
-    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="SimpleLanguageAnnotatorAggregateDescriptor">
       <import name="SimpleLanguageAnnotatorAggregateDescriptor"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="WhitespaceTokenizer">
       <import name="WhitespaceTokenizer"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="OpenCalaisAnnotator">
-      <import name="OpenCalaisAnnotator"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="HmmTagger">
       <import name="HmmTagger"/>
@@ -36,9 +27,6 @@
       <fixedFlow>
         <node>WhitespaceTokenizer</node>
         <node>HmmTagger</node>
-        <node>TextLanguageDetectionAEDescriptor</node>
-        <node>TextRankedEntityExtractionAEDescriptor</node>
-        <node>OpenCalaisAnnotator</node>
         <node>SimpleLanguageAnnotatorAggregateDescriptor</node>
         <node>AbstractAnnotatorDescriptor</node>
       </fixedFlow>
