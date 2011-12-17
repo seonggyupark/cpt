@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>cybion</groupId>
   <artifactId>cpt-web</artifactId>
@@ -7,13 +7,12 @@
   <version>0.0.2-SNAPSHOT</version>
   <name>cpt-web</name>
   <description>Web Application Cybion Perfect Tool</description>
-  <url>www.cybion.it</url>
   <parent>
-  	<artifactId>superpom</artifactId>
-  	<groupId>cybion</groupId>
-  	<version>0.0.1-SNAPSHOT</version>
+    <artifactId>superpom</artifactId>
+    <groupId>cybion</groupId>
+    <version>0.0.1-SNAPSHOT</version>
   </parent>
-   <build>
+  <build>
     <defaultGoal>package</defaultGoal>
     <testSourceDirectory>src/test/java</testSourceDirectory>
     <resources>
@@ -21,7 +20,7 @@
         <directory>${basedir}/src/main/resources</directory>
       </resource>
       <resource>
-      	<directory>${basedir}/src/main/webapp</directory>
+        <directory>${basedir}/src/main/webapp</directory>
       </resource>
     </resources>
     <finalName>cpt-web</finalName>
@@ -42,9 +41,9 @@
         </configuration>
       </plugin>
       <plugin>
-      	<groupId>org.apache.commons</groupId>
-      	<artifactId>commons-build-plugin</artifactId>
-      	<version>1.1</version>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-build-plugin</artifactId>
+        <version>1.1</version>
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
@@ -64,55 +63,55 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-webmvc</artifactId>
-    	<version>2.5.6</version>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>2.5.6</version>
     </dependency>
     <dependency>
-    	<groupId>jetty</groupId>
-    	<artifactId>servlet-api</artifactId>
-    	<version>2.5-6.0.2</version>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
     </dependency>
     <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring</artifactId>
-    	<version>2.5.6</version>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring</artifactId>
+      <version>2.5.6</version>
     </dependency>
     <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-hibernate3</artifactId>
-    	<version>2.0.8</version>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-hibernate3</artifactId>
+      <version>2.0.8</version>
     </dependency>
     <dependency>
-    	<groupId>commons-fileupload</groupId>
-    	<artifactId>commons-fileupload</artifactId>
-    	<version>1.2.1</version>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.2.1</version>
     </dependency>
     <dependency>
-    	<groupId>it.chi.webpipe</groupId>
-    	<artifactId>crawler</artifactId>
-    	<version>1.5-SNAPSHOT</version>
+      <groupId>it.chi.webpipe</groupId>
+      <artifactId>crawler</artifactId>
+      <version>1.5-SNAPSHOT</version>
     </dependency>
     <dependency>
-    	<groupId>it.chi.webpipe</groupId>
-    	<artifactId>webpipe-pilot</artifactId>
-    	<version>1.5-SNAPSHOT</version>
+      <groupId>it.chi.webpipe</groupId>
+      <artifactId>webpipe-pilot</artifactId>
+      <version>1.5-SNAPSHOT</version>
     </dependency>
     <dependency>
-    	<groupId>org.hibernate</groupId>
-    	<artifactId>hibernate-core</artifactId>
-    	<version>3.3.1.GA</version>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>3.3.1.GA</version>
     </dependency>
     <dependency>
-    	<groupId>it.chi.webpipe</groupId>
-    	<artifactId>nr-model</artifactId>
-    	<version>1.2-SNAPSHOT</version>
+      <groupId>it.chi.webpipe</groupId>
+      <artifactId>nr-model</artifactId>
+      <version>1.2-SNAPSHOT</version>
     </dependency>
     <dependency>
-    	<groupId>mysql</groupId>
-    	<artifactId>mysql-connector-java</artifactId>
-    	<version>5.1.3</version>
-    	<scope>runtime</scope>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.3</version>
+      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>hsqldb</groupId>
@@ -120,89 +119,78 @@
       <version>1.7.2.2</version>
     </dependency>
     <dependency>
-    	<groupId>it.uniroma3.website</groupId>
-    	<artifactId>website-html</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
+      <groupId>it.uniroma3.website</groupId>
+      <artifactId>website-html</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
-    	<groupId>org.apache.uima</groupId>
-    	<artifactId>uimaj-core</artifactId>
-    	<version>2.3.1-SNAPSHOT</version>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>uimaj-core</artifactId>
+      <version>2.3.1</version>
     </dependency>
     <dependency>
-    	<groupId>cybion</groupId>
-    	<artifactId>aggregate_annotator</artifactId>
-    	<version>0.0.2-SNAPSHOT</version>
+      <groupId>cybion</groupId>
+      <artifactId>aggregate_annotator</artifactId>
+      <version>0.0.2-SNAPSHOT</version>
     </dependency>
     <dependency>
-    	<groupId>it.chi.webpipe</groupId>
-    	<artifactId>wrapper</artifactId>
-    	<version>1.5-SNAPSHOT</version>
+      <groupId>it.chi.webpipe</groupId>
+      <artifactId>wrapper</artifactId>
+      <version>1.5-SNAPSHOT</version>
     </dependency>
     <dependency>
-    	<groupId>jdom</groupId>
-    	<artifactId>jdom</artifactId>
-    	<version>1.0</version>
+      <groupId>jdom</groupId>
+      <artifactId>jdom</artifactId>
+      <version>1.0</version>
     </dependency>
     <dependency>
-    	<groupId>it.uniroma3.website</groupId>
-    	<artifactId>website-model</artifactId>
-    	<version>1.2-SNAPSHOT</version>
+      <groupId>it.uniroma3.website</groupId>
+      <artifactId>website-model</artifactId>
+      <version>1.2-SNAPSHOT</version>
     </dependency>
     <dependency>
-    	<groupId>opensymphony</groupId>
-    	<artifactId>quartz-all</artifactId>
-    	<version>1.6.5</version>
+      <groupId>opensymphony</groupId>
+      <artifactId>quartz-all</artifactId>
+      <version>1.6.5</version>
     </dependency>
     <dependency>
-    	<groupId>log4j</groupId>
-    	<artifactId>log4j</artifactId>
-    	<version>1.2.12</version>
-    	<type>jar</type>
-    	<scope>compile</scope>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.12</version>
     </dependency>
     <dependency>
-    	<groupId>cybion</groupId>
-    	<artifactId>cpt-uima</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    	<type>pom</type>
-    	<scope>runtime</scope>
-    </dependency>
-    <dependency>
-    	<groupId>org.apache.uima</groupId>
-    	<artifactId>SimpleServer</artifactId>
-    	<version>2.3.1-SNAPSHOT</version>
-    	<type>jar</type>
-    	<scope>compile</scope>
+      <groupId>org.apache.uima</groupId>
+      <artifactId>SimpleServer</artifactId>
+      <version>2.3.1</version>
     </dependency>
   </dependencies>
   <profiles>
-  	<profile>
-			<id>source</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-assembly-plugin</artifactId>
-						<configuration>
-							<descriptorRefs>
-								<descriptorRef>src</descriptorRef>
-							</descriptorRefs>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
+    <profile>
+      <id>source</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <configuration>
+              <descriptorRefs>
+                <descriptorRef>src</descriptorRef>
+              </descriptorRefs>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
   </profiles>
   <repositories>
-  	<repository>
-        <id>jahia</id>
-        <url>http://maven.jahia.org/maven2</url>
-        <releases>
-           <enabled>true</enabled>
-        </releases>
-        <snapshots>
-          <enabled>false</enabled>
-        </snapshots>        
-     </repository>
+    <repository>
+      <id>jahia</id>
+      <url>http://maven.jahia.org/maven2</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 </project>

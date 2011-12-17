@@ -1,19 +1,13 @@
 package cybion.cpt_web.controller.action;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-
-import org.apache.log4j.Logger;
-
-import cybion.cpt_web.business.DefaultResultComparator;
-import cybion.cpt_web.business.PageCrawler;
-import cybion.cpt_web.business.ResultComparator;
-import cybion.cpt_web.business.UIMAExecutor;
-import cybion.cpt_web.business.UIMAResult;
+import cybion.cpt_web.business.*;
 import cybion.cpt_web.model.Pagina;
 import cybion.cpt_web.persistence.PersistenceBroker;
+import org.apache.log4j.Logger;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CheckFonteAction implements CybionAction {
 
@@ -37,7 +31,7 @@ public class CheckFonteAction implements CybionAction {
 
       PageCrawler pageCrawler = new PageCrawler(broker); // create the page crawler
 
-      // take source “d from request
+      // take source id from request
       int idFonte = getIdFonte(request);
 
       // download pages from the identified source
