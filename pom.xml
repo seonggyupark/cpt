@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <modules>
     <module>cpt-superpom</module>
-    <module>cpt-core</module>
+    <!--<module>cpt-core</module>-->
     <module>cpt-web</module>
     <module>cpt-uima</module>
     <module>cpt-test</module>

@@ -49,8 +49,6 @@
     <dependency>
       <groupId>org.apache.uima</groupId>
       <artifactId>WhitespaceTokenizer</artifactId>
-      <type>jar</type>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.uima</groupId>
@@ -58,9 +56,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.uima</groupId>
-      <artifactId>alchemy-annotator</artifactId>
-      <type>jar</type>
-      <scope>compile</scope>
+      <artifactId>AlchemyAPIAnnotator</artifactId>
     </dependency>
   </dependencies>
 </project>

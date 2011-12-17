@@ -47,7 +47,7 @@
   <dependencies>
     <dependency>
       <groupId>org.apache.uima</groupId>
-      <artifactId>alchemy-annotator</artifactId>
+      <artifactId>AlchemyAPIAnnotator</artifactId>
     </dependency>
   </dependencies>
 </project>
