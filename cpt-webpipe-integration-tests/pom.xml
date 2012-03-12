@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cybion</groupId>
+  <artifactId>cpt-webpipe-integration-tests</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>Test di integrazione per verificare il funzionamento della webpipe</description>
+  <parent>
+  	<artifactId>superpom</artifactId>
+  	<groupId>cybion</groupId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <dependencies>
+  	<dependency>
+  		<groupId>it.chi.webpipe</groupId>
+  		<artifactId>webpipe-integration-tests</artifactId>
+  		<version>1.1-SNAPSHOT</version>
+  		<scope>test</scope>
+  	</dependency>
+  </dependencies>
+</project>

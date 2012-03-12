@@ -1,0 +1,38 @@
+<navigation>
+	<model>
+		<pageclass type="pageclass_0">
+			<classlink expectedtype="pageclass_1">
+				<linksfactory type="AnchorLinksFactory">
+					<xpath><![CDATA[//HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]]]></xpath>
+				</linksfactory>
+			</classlink>
+		</pageclass>
+		<pageclass type="pageclass_1">
+			<classlink expectedtype="pageclass_2">
+				<linksfactory type="AnchorLinksFactory">
+					<xpath><![CDATA[//HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[3]/DIV[10]/A[1]]]></xpath>
+				</linksfactory>
+			</classlink>
+		</pageclass>
+		<pageclass type="pageclass_2">
+			<classlink expectedtype="pageclass_3">
+				<linksfactory type="AnchorLinksFactory">
+					<xpath><![CDATA[//HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[3]/DIV[1]/DIV/A[1]]]><urlPattern><![CDATA[^http://arpebur.regione.fvg.it/newbur/visionaBUR[?](bnum)=([^&]*)$]]></urlPattern>
+					</xpath>
+				</linksfactory>
+			</classlink>
+		</pageclass>
+		<pageclass type="pageclass_3">
+			<classlink expectedtype="pageclass_4">
+				<linksfactory type="AnchorLinksFactory">
+					<xpath><![CDATA[//HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[3]/DIV[1]/DIV[1]/DIV/A[1]]]><urlPattern><![CDATA[^http://arpebur.regione.fvg.it/newbur/downloadPDF[?](doc|name)=([^&]*)&(doc|name)=([^&]*)$]]></urlPattern>
+					</xpath>
+				</linksfactory>
+			</classlink>
+		</pageclass>
+		<pageclass type="pageclass_4" />
+	</model>
+	<entrypoint type="pageclass_0">
+		<url><![CDATA[http://arpebur.regione.fvg.it/newbur/]]></url>
+	</entrypoint>
+</navigation>

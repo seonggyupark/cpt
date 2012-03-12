@@ -1,0 +1,3 @@
+<wrapper>
+	<extractionrule extractor="XPath" xpath="/" />	
+</wrapper>
