@@ -3,7 +3,7 @@
   <parent>
     <artifactId>annotator-superpom</artifactId>
     <groupId>cybion</groupId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>cybion</groupId>
@@ -12,7 +12,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>activity_annotator</name>
   <description>annota l'attività del bando</description>
-  <url>http://maven.apache.org</url>
   <build>
     <resources>
       <resource>
