@@ -19,12 +19,8 @@ import java.util.*;
 
 public class WebpipeExecutor {
 
-//	private static final String prePath = "/tmp/Jetty_0_0_0_0_8080_cpt.web.war__cpt.web__qug9jb/webapp/WEB-INF/classes/WEB-INF";
-//	private static final String prePath = "/webpipes/";
-
   ResourceBundle bundle = ResourceBundle.getBundle("config");
   String prePath = bundle.getString("prePath");
-
 
   private Logger logger = Logger.getLogger(this.getClass());
 

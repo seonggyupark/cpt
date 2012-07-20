@@ -3,16 +3,16 @@ package cybion.cpt_web.business.utility;
 import org.jdom.Document;
 
 /**
- * 
- * @author Tommaso Teofili
- *
+ * Adapts a crawling specification from the CMG model to the Webpipe model
  */
 public interface CrawlingSpecificationAdapter {
-	
-	/** Torna un documento contenente un XML adattato per la Webpipe */
-	public Document getAdaptedDoc();
-	
-	/** Getter & Setter */
-	public void setPluginCrawlingSpecificationDocument(Document d);
+
+    /**
+     * Converted the current objec to an XML {@link Document} adapted to the
+     * Webpipe format
+     */
+    public Document getAdaptedDoc() throws Exception;
+
+    public void setPluginCrawlingSpecificationDocument(Document d);
 
 }

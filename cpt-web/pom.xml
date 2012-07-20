@@ -8,9 +8,9 @@
   <name>cpt-web</name>
   <description>Web Application Cybion Perfect Tool</description>
   <parent>
-    <artifactId>superpom</artifactId>
+    <artifactId>parent</artifactId>
     <groupId>cybion</groupId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
   <build>
     <defaultGoal>package</defaultGoal>
@@ -88,12 +88,12 @@
       <version>1.2.1</version>
     </dependency>
     <dependency>
-      <groupId>it.chi.webpipe</groupId>
+      <groupId>it.uniroma3.webpipe</groupId>
       <artifactId>crawler</artifactId>
-      <version>1.5-SNAPSHOT</version>
+      <version>1.6-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>it.chi.webpipe</groupId>
+      <groupId>it.uniroma3.webpipe</groupId>
       <artifactId>webpipe-pilot</artifactId>
       <version>1.5-SNAPSHOT</version>
     </dependency>
@@ -103,7 +103,7 @@
       <version>3.3.1.GA</version>
     </dependency>
     <dependency>
-      <groupId>it.chi.webpipe</groupId>
+      <groupId>it.uniroma3.webpipe</groupId>
       <artifactId>nr-model</artifactId>
       <version>1.2-SNAPSHOT</version>
     </dependency>
@@ -121,7 +121,7 @@
     <dependency>
       <groupId>it.uniroma3.website</groupId>
       <artifactId>website-html</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>0.0.2-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.apache.uima</groupId>
@@ -134,9 +134,9 @@
       <version>0.0.2-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>it.chi.webpipe</groupId>
+      <groupId>it.uniroma3.webpipe</groupId>
       <artifactId>wrapper</artifactId>
-      <version>1.5-SNAPSHOT</version>
+      <version>1.6-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>jdom</groupId>
@@ -146,7 +146,7 @@
     <dependency>
       <groupId>it.uniroma3.website</groupId>
       <artifactId>website-model</artifactId>
-      <version>1.2-SNAPSHOT</version>
+      <version>1.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>opensymphony</groupId>
