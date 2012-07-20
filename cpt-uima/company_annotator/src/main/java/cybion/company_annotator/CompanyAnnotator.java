@@ -37,14 +37,7 @@ import java.util.HashSet;
 
 public class CompanyAnnotator extends EntityAnnotator {
 
-
-
-  // file (needed for external
-  // callings)
-
   private Collection<String> unknownCompanies = new HashSet<String>(); // companies not known by the
-
-  // dictionary
 
   @Override
   public void initialize(UimaContext context) throws ResourceInitializationException {

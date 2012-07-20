@@ -2,10 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cybion</groupId>
-    <artifactId>superpom</artifactId>
+    <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>superpom Maven Multi Project</name>
+    <version>0.0.2-SNAPSHOT</version>
     <developers>
         <developer>
             <id>teofili</id>
@@ -53,23 +52,13 @@
             </plugin>
         </plugins>
     </reporting>
-    <distributionManagement>
-        <repository>
-            <id>sinai</id>
-            <url>scp://193.204.161.140/var/www/maven2</url>
-        </repository>
-        <snapshotRepository>
-            <id>sinai</id>
-            <url>scp://193.204.161.140/var/www/maven2</url>
-        </snapshotRepository>
-    </distributionManagement>
     <modules>
         <module>annotator</module>
     </modules>
     <repositories>
       <repository>
-        <id>sinai-repo</id>
-        <url>http://sinai.dia.uniroma3.it:8000/maven2/</url>
+        <id>ortles-repo</id>
+        <url>http://ortles.dia.uniroma3.it:8080/maven2/</url>
         <snapshots>
           <enabled>true</enabled>
         </snapshots>
