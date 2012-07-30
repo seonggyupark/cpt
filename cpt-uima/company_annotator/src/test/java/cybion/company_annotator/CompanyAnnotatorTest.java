@@ -11,102 +11,72 @@ import org.junit.Test;
 
 import java.util.List;
 
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 
 public class CompanyAnnotatorTest {
 
-  private static final String FEATURE_NAME = "companies";
   private static final String ANNOTATOR_DESCRIPTOR = "desc/CompanyAggregateAEDescriptor.xml";
 
   @Test
-  public void test1() {
-    try {
+  public void test1() throws Exception {
       String doc = FileUtils.file2String(JUnitExtension.getFile("bandi/1.txt"));
       JCas cas = TestUtils.executeAE(TestUtils.getAE(ANNOTATOR_DESCRIPTOR), doc);
-      assertTrue(cas != null);
+      assertNotNull(cas);
       List<Annotation> calaisCompany = AnnotatorUtils.getAnnotations(Company.type, cas);
-      assertTrue(calaisCompany != null);
+      assertNotNull(calaisCompany);
       assertTrue(calaisCompany.size() == 0);
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail(e.getLocalizedMessage());
-    }
   }
 
   @Test
-  public void test2() {
-    try {
+  public void test2() throws Exception {
       String doc = FileUtils.file2String(JUnitExtension.getFile("bandi/2.txt"));
       JCas cas = TestUtils.executeAE(TestUtils.getAE(ANNOTATOR_DESCRIPTOR), doc);
-      assertTrue(cas != null);
+      assertNotNull(cas);
       List<Annotation> calaisCompany = AnnotatorUtils.getAnnotations(Company.type, cas);
-      assertTrue(calaisCompany != null);
+      assertNotNull(calaisCompany);
       assertTrue(calaisCompany.size() == 0);
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail(e.getLocalizedMessage());
-    }
   }
 
   @Test
-  public void test3() {
-    try {
+  public void test3() throws Exception {
       String doc = FileUtils.file2String(JUnitExtension.getFile("bandi/3.txt"));
       JCas cas = TestUtils.executeAE(TestUtils.getAE(ANNOTATOR_DESCRIPTOR), doc);
-      assertTrue(cas != null);
+      assertNotNull(cas);
       List<Annotation> calaisCompany = AnnotatorUtils.getAnnotations(Company.type, cas);
-      assertTrue(calaisCompany != null);
+      assertNotNull(calaisCompany);
       assertTrue(calaisCompany.size() == 0);
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail(e.getLocalizedMessage());
-    }
   }
 
   @Test
-  public void test4() {
-    try {
+  public void test4() throws Exception {
       String doc = FileUtils.file2String(JUnitExtension.getFile("bandi/4.txt"));
       JCas cas = TestUtils.executeAE(TestUtils.getAE(ANNOTATOR_DESCRIPTOR), doc);
-      assertTrue(cas != null);
+      assertNotNull(cas);
       List<Annotation> calaisCompany = AnnotatorUtils.getAnnotations(Company.type, cas);
-      assertTrue(calaisCompany != null);
+      assertNotNull(calaisCompany);
       assertTrue(calaisCompany.size() == 0);
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail(e.getLocalizedMessage());
-    }
   }
 
   @Test
-  public void test5() {
-    try {
+  public void test5() throws Exception {
       String doc = FileUtils.file2String(JUnitExtension.getFile("bandi/5.txt"));
       JCas cas = TestUtils.executeAE(TestUtils.getAE(ANNOTATOR_DESCRIPTOR), doc);
-      assertTrue(cas != null);
+      assertNotNull(cas);
       List<Annotation> calaisCompany = AnnotatorUtils.getAnnotations(Company.type, cas);
-      assertTrue(calaisCompany != null);
+      assertNotNull(calaisCompany);
       assertTrue(calaisCompany.size() > 0);
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail(e.getLocalizedMessage());
-    }
   }
 
   @Test
-  public void test6() {
-    try {
+  public void test6() throws Exception {
       String doc = FileUtils.file2String(JUnitExtension.getFile("bandi/6.txt"));
       JCas cas = TestUtils.executeAE(TestUtils.getAE(ANNOTATOR_DESCRIPTOR), doc);
-      assertTrue(cas != null);
+      assertNotNull(cas);
       List<Annotation> calaisCompany = AnnotatorUtils.getAnnotations(Company.type, cas);
-      assertTrue(calaisCompany != null);
+      assertNotNull(calaisCompany);
       assertTrue(calaisCompany.size() > 0);
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail(e.getLocalizedMessage());
-    }
   }
 }
