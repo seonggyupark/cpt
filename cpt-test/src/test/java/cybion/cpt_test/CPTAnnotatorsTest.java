@@ -1,7 +1,5 @@
 package cybion.cpt_test;
 
-import static org.junit.Assert.fail;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -46,9 +44,7 @@ public class CPTAnnotatorsTest {
   }
 
   @Test
-  public void testAllCPTAnnotators() {
-    try {
-
+  public void testAllCPTAnnotators() throws Exception {
       // create a new Collection Processing Manager
       mCPM = UIMAFramework.newCollectionProcessingManager();
 
@@ -60,7 +56,7 @@ public class CPTAnnotatorsTest {
 
       // Finish setup
       mCPM.setPauseOnException(true);
-      
+
       // Start Processing (in batches of 10, just for testing purposes)
       mCPM.process(setBandiToAnalyze(), 10);
 
@@ -73,15 +69,10 @@ public class CPTAnnotatorsTest {
         System.err.println(mCPM.getProgress());
       }
       // TODO get all the features to extract from the bandi
-      // BandoEntity bandoEntity = new BandoEntity(cas.getJCas());
 
       // TODO get the annotator for each feature
 
       // TODO for each feature and for each bando verify the feature is extracted by the annotator
-    } catch (Exception e) {
-      e.printStackTrace();
-      fail(e.getLocalizedMessage());
-    }
 
   }
 

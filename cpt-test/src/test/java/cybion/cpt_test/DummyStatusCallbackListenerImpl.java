@@ -18,7 +18,7 @@ public class DummyStatusCallbackListenerImpl implements StatusCallbackListener {
   }
   public void entityProcessComplete(CAS aCas, EntityProcessStatus aStatus) {
     entityCount++;
-    logger.log(Level.INFO,"processo complete ("+entityCount+")");
+    logger.log(Level.INFO,"process complete ("+entityCount+")");
   }
 
   public void aborted() {
