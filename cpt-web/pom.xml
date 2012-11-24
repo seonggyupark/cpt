@@ -11,6 +11,7 @@
     <artifactId>parent</artifactId>
     <groupId>cybion</groupId>
     <version>0.0.2-SNAPSHOT</version>
+    <relativePath>../cpt-superpom</relativePath>
   </parent>
   <build>
     <defaultGoal>package</defaultGoal>
