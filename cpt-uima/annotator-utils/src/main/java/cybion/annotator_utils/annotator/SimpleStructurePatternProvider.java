@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 /**
- * given a key it builds a pattern that will match something like *key:*vaue* (caching builded ones)
+ * given a key it builds a pattern that will match something like *key:*vaue* (caching existing ones)
  * 
  * @author tommaso
  */

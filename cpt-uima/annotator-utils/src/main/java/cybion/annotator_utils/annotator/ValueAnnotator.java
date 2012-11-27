@@ -92,9 +92,9 @@ public class ValueAnnotator extends JCasAnnotator_ImplBase {
     }
 
     // TODO: parse the sentence candidates
-    for (SentenceAnnotation sentence : sentenceCandidates) {
-      System.err.println(sentence.getCoveredText());
-    }
+//    for (SentenceAnnotation sentence : sentenceCandidates) {
+//      System.err.println(sentence.getCoveredText());
+//    }
 
   }
 
