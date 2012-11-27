@@ -3,6 +3,7 @@ package cybion.abstract_annotator;
 import cybion.annotator_utils.test.TestUtils;
 import org.junit.Test;
 
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -17,7 +18,7 @@ public class AbstractAnnotatorTest {
     try {
       String abstractText = TestUtils.testWithFileAndCache(ANNOTATOR_DESCRIPTOR, "bandi/b3.txt",
               FEATURE_NAME);
-      assertTrue(abstractText != null);
+      assertNotNull(abstractText);
     } catch (Exception e) {
       e.printStackTrace();
       fail(e.getLocalizedMessage());
@@ -29,7 +30,7 @@ public class AbstractAnnotatorTest {
     try {
       String abstractText = TestUtils.testWithFileAndCache(ANNOTATOR_DESCRIPTOR, "bandi/EID.txt",
               FEATURE_NAME);
-      assertTrue(abstractText != null);
+      assertNotNull(abstractText);
     } catch (Exception e) {
       e.printStackTrace();
       fail(e.getLocalizedMessage());
@@ -53,7 +54,7 @@ public class AbstractAnnotatorTest {
     try {
       String abstractText = TestUtils.testWithFileAndCache(ANNOTATOR_DESCRIPTOR, "bandi/FP7.txt",
               FEATURE_NAME);
-      assertTrue(abstractText != null);
+      assertNotNull(abstractText);
     } catch (Exception e) {
       e.printStackTrace();
       fail(e.getLocalizedMessage());
@@ -65,7 +66,7 @@ public class AbstractAnnotatorTest {
     try {
       String abstractText = TestUtils.testWithFileAndCache(ANNOTATOR_DESCRIPTOR, "bandi/IARC.txt",
               FEATURE_NAME);
-      assertTrue(abstractText != null);
+      assertNotNull(abstractText);
     } catch (Exception e) {
       e.printStackTrace();
       fail(e.getLocalizedMessage());
@@ -77,7 +78,7 @@ public class AbstractAnnotatorTest {
     try {
       String abstractText = TestUtils.testWithFileAndCache(ANNOTATOR_DESCRIPTOR, "bandi/OJS62.txt",
               FEATURE_NAME);
-      assertTrue(abstractText != null);
+      assertNotNull(abstractText);
     } catch (Exception e) {
       e.printStackTrace();
       fail(e.getLocalizedMessage());
@@ -89,7 +90,7 @@ public class AbstractAnnotatorTest {
     try {
       String abstractText = TestUtils.testWithFileAndCache(ANNOTATOR_DESCRIPTOR, "bandi/fvg.txt",
               FEATURE_NAME);
-      assertTrue(abstractText != null);
+      assertNotNull(abstractText);
     } catch (Exception e) {
       e.printStackTrace();
       fail(e.getLocalizedMessage());
@@ -101,7 +102,7 @@ public class AbstractAnnotatorTest {
     try {
       String abstractText = TestUtils.testWithFileAndCache(ANNOTATOR_DESCRIPTOR, "bandi/bur.txt",
               FEATURE_NAME);
-      assertTrue(abstractText != null);
+      assertNotNull(abstractText);
     } catch (Exception e) {
       e.printStackTrace();
       fail(e.getLocalizedMessage());
