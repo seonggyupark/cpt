@@ -32,8 +32,6 @@
         <configuration>
           <forkMode>pertest</forkMode>
           <argLine>-Xms256m -Xmx512m</argLine>
-          <testFailureIgnore>false</testFailureIgnore>
-          <skip>false</skip>
           <includes>
             <include>**/*.java</include>
           </includes>

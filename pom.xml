@@ -8,9 +8,9 @@
   <modules>
     <module>cpt-superpom</module>
     <!--<module>cpt-core</module>-->
-    <module>cpt-web</module>
+    <!--<module>cpt-web</module>-->
     <module>cpt-uima</module>
     <module>cpt-test</module>
-    <module>cpt-webpipe-integration-tests</module>
+    <!--<module>cpt-webpipe-integration-tests</module>-->
   </modules>
 </project>
