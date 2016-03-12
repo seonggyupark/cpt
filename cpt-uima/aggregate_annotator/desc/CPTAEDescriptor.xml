@@ -21,9 +21,9 @@
     <delegateAnalysisEngine key="ActivityAnnotatorDescriptor">
       <import name="ActivityAnnotatorDescriptor"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="OpenCalaisAnnotator">
-      <import location="OpenCalaisAnnotator.xml"/>
-    </delegateAnalysisEngine>
+    <!--<delegateAnalysisEngine key="OpenCalaisAnnotator">-->
+      <!--<import location="OpenCalaisAnnotator.xml"/>-->
+    <!--</delegateAnalysisEngine>-->
     <delegateAnalysisEngine key="AbstractAnnotatorDescriptor">
       <import name="AbstractAnnotatorDescriptor"/>
     </delegateAnalysisEngine>
@@ -81,7 +81,7 @@
         <node>TextRankedEntityExtractionAEDescriptor</node>
         <node>TextKeywordExtractionAEDescriptor</node>
         <node>TextConceptTaggingAEDescriptor</node>
-        <node>OpenCalaisAnnotator</node>
+        <!--<node>OpenCalaisAnnotator</node>-->
         <node>WhitespaceTokenizer</node>
         <node>HmmTagger</node>
         <node>SnowballAnnotator</node>

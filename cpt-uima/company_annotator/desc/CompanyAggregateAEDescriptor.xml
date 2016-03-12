@@ -6,12 +6,12 @@
     <delegateAnalysisEngine key="CompanyDictionaryAnnotatorDescriptor">
       <import location="CompanyDictionaryAnnotatorDescriptor.xml"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="OpenCalaisAnnotator">
-      <import location="OpenCalaisAnnotator.xml"/>
-    </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="CompanyAnnotatorDescriptor">
-      <import location="CompanyAnnotatorDescriptor.xml"/>
-    </delegateAnalysisEngine>
+    <!--<delegateAnalysisEngine key="OpenCalaisAnnotator">-->
+      <!--<import location="OpenCalaisAnnotator.xml"/>-->
+    <!--</delegateAnalysisEngine>-->
+    <!--<delegateAnalysisEngine key="CompanyAnnotatorDescriptor">-->
+      <!--<import location="CompanyAnnotatorDescriptor.xml"/>-->
+    <!--</delegateAnalysisEngine>-->
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>CompanyAggregateAEDescriptor</name>
@@ -22,9 +22,9 @@
     <configurationParameterSettings/>
     <flowConstraints>
       <fixedFlow>
-        <node>OpenCalaisAnnotator</node>
+        <!--<node>OpenCalaisAnnotator</node>-->
         <node>CompanyDictionaryAnnotatorDescriptor</node>
-        <node>CompanyAnnotatorDescriptor</node>
+        <!--<node>CompanyAnnotatorDescriptor</node>-->
       </fixedFlow>
     </flowConstraints>
     <fsIndexCollection/>

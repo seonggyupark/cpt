@@ -55,12 +55,19 @@ public class CPTAnnotatorsTest {
         // Finish setup
         mCPM.setPauseOnException(true);
 
-        // Start Processing (in batches of 10, just for testing purposes)
         mCPM.process(getCollectionReader(), 10);
 
+        Thread.sleep(10000);
+
         while (mCPM.isProcessing()) {
-            for (Progress p : mCPM.getProgress()) {
-                System.out.println(p.getUnit() + ": " + p.getCompleted() + "/" + p.getTotal());
+            Progress[] progress = mCPM.getProgress();
+            if (progress != null) {
+                for (Progress p : progress) {
+                    mCPM.getAnalysisEngine().getLogger().log(Level.FINE, p.getUnit() + ": " + p.getCompleted() + "/" + p.getTotal());
+                }
+            }
+            if (mCPM.isPaused()) {
+                break;
             }
         }
 
