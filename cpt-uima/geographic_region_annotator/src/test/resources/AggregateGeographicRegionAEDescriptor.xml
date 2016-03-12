@@ -6,9 +6,9 @@
     <delegateAnalysisEngine key="GeographicRegionAnnotatorDescriptor">
       <import name="GeographicRegionAnnotatorDescriptor"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="OpenCalaisAnnotator">
-      <import location="OpenCalaisAnnotator.xml"/>
-    </delegateAnalysisEngine>
+    <!--<delegateAnalysisEngine key="OpenCalaisAnnotator">-->
+      <!--<import location="OpenCalaisAnnotator.xml"/>-->
+    <!--</delegateAnalysisEngine>-->
     <delegateAnalysisEngine key="TextRankedEntityExtractionAEDescriptor">
       <import location="TextRankedEntityExtractionAEDescriptor.xml"/>
     </delegateAnalysisEngine>
@@ -22,7 +22,7 @@
     <configurationParameterSettings/>
     <flowConstraints>
       <fixedFlow>
-        <node>OpenCalaisAnnotator</node>
+        <!--<node>OpenCalaisAnnotator</node>-->
         <node>TextRankedEntityExtractionAEDescriptor</node>
         <node>GeographicRegionAnnotatorDescriptor</node>
       </fixedFlow>

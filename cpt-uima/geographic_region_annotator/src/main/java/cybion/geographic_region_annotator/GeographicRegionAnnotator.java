@@ -30,7 +30,7 @@ public class GeographicRegionAnnotator extends JCasAnnotator_ImplBase {
   public void process(JCas cas) throws AnalysisEngineProcessException {
 
     // get geographic annotations extracted by open calais service
-    List<Annotation> calaisGeoAnnotations = getCalaisGeoAnnotations(cas);
+//    List<Annotation> calaisGeoAnnotations = getCalaisGeoAnnotations(cas);
 
     // get geographic annotations extracted by alchemyapi service
     List<FeatureStructure> alchemyGeoEntities = getAlchemyGeoEntities(cas);
@@ -47,14 +47,14 @@ public class GeographicRegionAnnotator extends JCasAnnotator_ImplBase {
     }
     
     //add open calais covered text values to geographic region text
-    try {
-      for (Annotation openCalaisAnnotation : calaisGeoAnnotations) {
-        buffer.append(openCalaisAnnotation.getCoveredText()).append(SPACE);
-      }
-    }
-    catch (Exception oce) {
-      //do nothing
-    }
+//    try {
+//      for (Annotation openCalaisAnnotation : calaisGeoAnnotations) {
+//        buffer.append(openCalaisAnnotation.getCoveredText()).append(SPACE);
+//      }
+//    }
+//    catch (Exception oce) {
+//      do nothing
+//    }
     
     
     //store value inside the bando entity

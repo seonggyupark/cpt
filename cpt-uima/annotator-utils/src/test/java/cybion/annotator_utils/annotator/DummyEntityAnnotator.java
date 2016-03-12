@@ -9,8 +9,7 @@ import java.util.regex.Pattern;
 
 public class DummyEntityAnnotator extends EntityAnnotator {
 
-  private String regex = "(the|that|your|it|uima|UIMA|yours|mine|my|this)\\s";
-
+  private static final String regex = "(the|that|your|it|uima|UIMA|yours|mine|my|this)\\s";
 
   /* (non-Javadoc)
    * @see org.apache.uima.analysis_component.JCasAnnotator_ImplBase#process(org.apache.uima.jcas.JCas)

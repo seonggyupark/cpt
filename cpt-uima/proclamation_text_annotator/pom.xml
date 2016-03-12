@@ -9,9 +9,10 @@
   <description>annota il testo integrale del bando</description>
   <url>http://maven.apache.org</url>
   <parent>
-    <artifactId>annotator-superpom</artifactId>
+    <artifactId>parent</artifactId>
     <groupId>cybion</groupId>
     <version>0.0.2-SNAPSHOT</version>
+    <relativePath>../../cpt-parent</relativePath>
   </parent>
   <build>
     <resources>

@@ -46,6 +46,11 @@
             <artifactId>type_system</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>cybion</groupId>
+            <artifactId>annotator-utils</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -130,9 +135,6 @@
             </plugin>
         </plugins>
     </reporting>
-    <modules>
-        <module>annotator</module>
-    </modules>
     <repositories>
       <repository>
         <id>ortles-repo</id>

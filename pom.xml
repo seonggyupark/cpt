@@ -6,7 +6,7 @@
   <packaging>pom</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <modules>
-    <module>cpt-superpom</module>
+    <module>cpt-parent</module>
     <!--<module>cpt-core</module>-->
     <!--<module>cpt-web</module>-->
     <module>cpt-uima</module>

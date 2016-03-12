@@ -85,8 +85,7 @@
    <nameValuePair>
     <name>InputDirectory</name>
     <value>
-     <string>/Users/tommaso/Documents/workspaces/tesi_ws/cpt-test/src/test/resources/bandi/
-     </string>
+     <string>src/test/resources/bandi</string>
     </value>
    </nameValuePair>
   </configurationParameterSettings>
@@ -95,7 +94,7 @@
 
   <typeSystemDescription>
    <imports>
-    <import location="/Users/tommaso/Documents/workspaces/tesi_ws/type_system/src/main/resources/CPT_TSDescriptor.xml" />
+    <import name="CPT_TSDescriptor" />
    </imports>
   </typeSystemDescription>
 
